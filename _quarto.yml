@@ -7,11 +7,31 @@ manuscript:
 format:
   html:
     embed-resources: true
-  # docx: default
+  docx:
+    reference-doc: reference.docx
   jats: default
 
   # (other formats)
-  pdf: default
+  # pdf: default
+
+
+
+  #   logo: assets/otessa-logo.jpg
+  #   pdf-standard: [a-4f, ua-2]
+  #   documentclass: scrartcl
+  #   papersize: letter
+  #   mainfont: Arial
+
+
+  typst:
+    toc: false
+    logo:
+      width: 1in
+      location: right-top
+      padding-right: 0.5in
+      padding-top: 0.25in
+    pdf-standard: ua-1
+    columns: 1
 
 execute:
   freeze: true
