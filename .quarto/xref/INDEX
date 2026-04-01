@@ -1,0 +1,13 @@
+{
+  "index.qmd": {
+    "index.html": "79d13bb8",
+    "index.docx": "6f56a282",
+    "index.xml": "64d3362d",
+    "index.tex": "adda33a0"
+  },
+  "output.md": {
+    "output-preview.html": "67f11552",
+    "output.out.ipynb": "f0a76193",
+    "output.subarticle.xml": "484a1fa2"
+  }
+}
