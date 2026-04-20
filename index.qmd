@@ -1,63 +1,68 @@
 ---
 title: "Report: Grand Challenges in IDT - Coordinating Research and Development on Significant Problems of Practice"
+title-block-banner: "#273893"
+title-block-banner-color: "white"
+article:
+  doi: 10.5555/12345678
 authors:
   - name: Stephanie Moore
     orcid: 0000-0001-5545-1894
     affiliation: University of New Mexico
-    city: Albuquerque
-    state: New Mexico
-    country: USA
     roles: writing
     corresponding: true
   - name: Theresa Huff
     orcid: 0009-0001-5759-5493
     affiliation: 
-    - OER Instructional Designer
     - Loyola Marymount University 
-    - William H. Hannon Library
-    city: Los Angeles
-    state: California
-    country: USA
     roles: writing
     corresponding: false
   - name: Natalie Milman
     orcid: 0000-0002-4085-7725
     affiliation: 
-    - Associate Dean, Office of Student Life
-    - Professor, Educational Technology Leadership
     - George Washington University
-    city: Washington
-    state: DC
-    country: USA
     roles: writing
     corresponding: false
   - name: Matthew Schmidt
     orcid: 0000-0002-8110-4367
     affiliation: 
-    - Associate Professor, Learning, Design, and Technology
-    - Professor, Educational Technology Leadership
     - University of Georgia
-    city: Athens
-    state: Georgia
-    country: USA
     roles: writing
     corresponding: false
   - name: Jason McDonald
     orcid: 0000-0002-9324-4738
     affiliation: 
-    - Professor, Instructional Psychology and Technology
-    - Professor, Educational Technology Leadership
     - Brigham Young University
-    city: Provo
-    state: Utah
-    country: USA
     roles: writing
     corresponding: false
-abstract: |
-  This white paper reports on the OTESSA Santa Fe Colloquium, a two-day scholarly convening held in June 2025 as part of the OTESSA 2025 Congress. Designed as a pilot for a collaborative, problem-centered model of inquiry, the colloquium brought together researchers, instructional designers, faculty, and journal editors to shift attention from educational technologies toward significant problems of practice in instructional design and technology (IDT). Through structured activities, including a World Café dialogue model and a Grand Challenges workshop, participants collectively identified, refined, and prioritized pressing challenges facing the field. Three priority grand challenges emerged: considering the whole human in education, supporting learner mental wellness, and redefining the purposes and structures of education. This paper synthesizes key insights from conference activities and post-colloquium reflection papers, highlighting shared themes, areas of alignment, and opportunities for coordination. Rather than presenting empirical findings, the report offers a practice-oriented synthesis intended to inform strategic planning, future convenings, and coordinated research and practice efforts within OTESSA and the broader IDT community.
+# abstract: |
+#   This white paper reports on the OTESSA Santa Fe Colloquium, a two-day scholarly convening held in June 2025 as part of the OTESSA 2025 Congress. Designed as a pilot for a collaborative, problem-centered model of inquiry, the colloquium brought together researchers, instructional designers, faculty, and journal editors to shift attention from educational technologies toward significant problems of practice in instructional design and technology (IDT). Through structured activities, including a World Café dialogue model and a Grand Challenges workshop, participants collectively identified, refined, and prioritized pressing challenges facing the field. Three priority grand challenges emerged: considering the whole human in education, supporting learner mental wellness, and redefining the purposes and structures of education. This paper synthesizes key insights from conference activities and post-colloquium reflection papers, highlighting shared themes, areas of alignment, and opportunities for coordination. Rather than presenting empirical findings, the report offers a practice-oriented synthesis intended to inform strategic planning, future convenings, and coordinated research and practice efforts within OTESSA and the broader IDT community.
 keywords: instructional design and technology, grand challenges, problem-centered research, human-centered education, collaborative inquiry
 bibliography: references.bib
+journal: 
+  title: "Open/Technology in Education, Society, and Scholarship Association Proceedings"
+  abbrev-title: "OTESSA Proceedings"
+volume: 5
+issue: 2
+citation: 
+  container-title: OTESSA Proceedings
+  volume: 5
+  issue: 2
+  doi: 10.5555/12345678
+funding: "The author received no specific funding for this work."
 ---
+
+::: {.content-visible when-format="typst"}
+
+
+
+:::
+
+# Abstract
+
+This white paper reports on the OTESSA Santa Fe Colloquium, a two-day scholarly convening held in June 2025 as part of the OTESSA 2025 Congress. Designed as a pilot for a collaborative, problem-centered model of inquiry, the colloquium brought together researchers, instructional designers, faculty, and journal editors to shift attention from educational technologies toward significant problems of practice in instructional design and technology (IDT). Through structured activities, including a World Café dialogue model and a Grand Challenges workshop, participants collectively identified, refined, and prioritized pressing challenges facing the field. Three priority grand challenges emerged: considering the whole human in education, supporting learner mental wellness, and redefining the purposes and structures of education. This paper synthesizes key insights from conference activities and post-colloquium reflection papers, highlighting shared themes, areas of alignment, and opportunities for coordination. Rather than presenting empirical findings, the report offers a practice-oriented synthesis intended to inform strategic planning, future convenings, and coordinated research and practice efforts within OTESSA and the broader IDT community.
+
+
+
 
 # **Introduction** 
 
@@ -257,3 +262,4 @@ The authors declare no conflicts of interest.
 No datasets were generated or analyzed as part of this practice-oriented work.
 
 # References
+

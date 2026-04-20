@@ -2,3 +2,10 @@
 logo: 
   small: assets/otessa-logo.jpg
 
+# color:
+#   background: "#ddeaf1"
+
+typography:
+  fonts:
+    - family: Roboto
+      source: google

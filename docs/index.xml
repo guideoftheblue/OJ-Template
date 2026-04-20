@@ -3,7 +3,18 @@
 and Interchange DTD v1.2 20190208//EN" "JATS-archivearticle1.dtd">
 <article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2" article-type="other">
   <front>
+    <journal-meta>
+      <journal-id/>
+      <journal-title-group>
+        <journal-title>OTESSA Proceedings</journal-title>
+      </journal-title-group>
+      <issn/>
+      <publisher>
+        <publisher-name/>
+      </publisher>
+    </journal-meta>
     <article-meta>
+      <article-id pub-id-type="doi">10.5555/12345678</article-id>
       <title-group>
         <article-title>Report: Grand Challenges in IDT - Coordinating Research
 and Development on Significant Problems of Practice</article-title>
@@ -29,8 +40,6 @@ and Development on Significant Problems of Practice</article-title>
           <string-name>Theresa Huff</string-name>
           <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
           <xref ref-type="aff" rid="aff-2">b</xref>
-          <xref ref-type="aff" rid="aff-3">c</xref>
-          <xref ref-type="aff" rid="aff-4">d</xref>
         </contrib>
         <contrib contrib-type="author">
           <contrib-id contrib-id-type="orcid">0000-0002-4085-7725</contrib-id>
@@ -40,9 +49,7 @@ and Development on Significant Problems of Practice</article-title>
           </name>
           <string-name>Natalie Milman</string-name>
           <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
-          <xref ref-type="aff" rid="aff-5">e</xref>
-          <xref ref-type="aff" rid="aff-6">f</xref>
-          <xref ref-type="aff" rid="aff-7">g</xref>
+          <xref ref-type="aff" rid="aff-3">c</xref>
         </contrib>
         <contrib contrib-type="author">
           <contrib-id contrib-id-type="orcid">0000-0002-8110-4367</contrib-id>
@@ -52,9 +59,7 @@ and Development on Significant Problems of Practice</article-title>
           </name>
           <string-name>Matthew Schmidt</string-name>
           <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
-          <xref ref-type="aff" rid="aff-8">h</xref>
-          <xref ref-type="aff" rid="aff-6">f</xref>
-          <xref ref-type="aff" rid="aff-9">i</xref>
+          <xref ref-type="aff" rid="aff-4">d</xref>
         </contrib>
         <contrib contrib-type="author">
           <contrib-id contrib-id-type="orcid">0000-0002-9324-4738</contrib-id>
@@ -64,9 +69,7 @@ and Development on Significant Problems of Practice</article-title>
           </name>
           <string-name>Jason McDonald</string-name>
           <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
-          <xref ref-type="aff" rid="aff-10">j</xref>
-          <xref ref-type="aff" rid="aff-6">f</xref>
-          <xref ref-type="aff" rid="aff-11">k</xref>
+          <xref ref-type="aff" rid="aff-5">e</xref>
         </contrib>
       </contrib-group>
       <aff id="aff-1">
@@ -76,52 +79,20 @@ and Development on Significant Problems of Practice</article-title>
       </aff>
       <aff id="aff-2">
         <institution-wrap>
-          <institution>OER Instructional Designer</institution>
+          <institution>Loyola Marymount University</institution>
         </institution-wrap>
       </aff>
       <aff id="aff-3">
         <institution-wrap>
-          <institution>Loyola Marymount University</institution>
+          <institution>George Washington University</institution>
         </institution-wrap>
       </aff>
       <aff id="aff-4">
         <institution-wrap>
-          <institution>William H. Hannon Library</institution>
-        </institution-wrap>
-      </aff>
-      <aff id="aff-5">
-        <institution-wrap>
-          <institution>Associate Dean, Office of Student Life</institution>
-        </institution-wrap>
-      </aff>
-      <aff id="aff-6">
-        <institution-wrap>
-          <institution>Professor, Educational Technology Leadership</institution>
-        </institution-wrap>
-      </aff>
-      <aff id="aff-7">
-        <institution-wrap>
-          <institution>George Washington University</institution>
-        </institution-wrap>
-      </aff>
-      <aff id="aff-8">
-        <institution-wrap>
-          <institution>Associate Professor, Learning, Design, and
-Technology</institution>
-        </institution-wrap>
-      </aff>
-      <aff id="aff-9">
-        <institution-wrap>
           <institution>University of Georgia</institution>
         </institution-wrap>
       </aff>
-      <aff id="aff-10">
-        <institution-wrap>
-          <institution>Professor, Instructional Psychology and
-Technology</institution>
-        </institution-wrap>
-      </aff>
-      <aff id="aff-11">
+      <aff id="aff-5">
         <institution-wrap>
           <institution>Brigham Young University</institution>
         </institution-wrap>
@@ -129,36 +100,43 @@ Technology</institution>
       <author-notes>
         <corresp id="cor-1"/>
       </author-notes>
+      <volume>5</volume>
+      <issue>2</issue>
       <history/>
-      <abstract>
-        <p>This white paper reports on the OTESSA Santa Fe Colloquium, a two-day
-scholarly convening held in June 2025 as part of the OTESSA 2025
-Congress. Designed as a pilot for a collaborative, problem-centered
-model of inquiry, the colloquium brought together researchers,
-instructional designers, faculty, and journal editors to shift attention
-from educational technologies toward significant problems of practice in
-instructional design and technology (IDT). Through structured
-activities, including a World Café dialogue model and a Grand Challenges
-workshop, participants collectively identified, refined, and prioritized
-pressing challenges facing the field. Three priority grand challenges
-emerged: considering the whole human in education, supporting learner
-mental wellness, and redefining the purposes and structures of
-education. This paper synthesizes key insights from conference
-activities and post-colloquium reflection papers, highlighting shared
-themes, areas of alignment, and opportunities for coordination. Rather
-than presenting empirical findings, the report offers a
-practice-oriented synthesis intended to inform strategic planning,
-future convenings, and coordinated research and practice efforts within
-OTESSA and the broader IDT community.</p>
-      </abstract>
       <kwd-group kwd-group-type="author">
         <kwd>instructional design and technology, grand challenges,
 problem-centered research, human-centered education, collaborative
 inquiry</kwd>
       </kwd-group>
+      <funding-group>
+        <funding-statement>The author received no specific funding for this
+work.</funding-statement>
+      </funding-group>
     </article-meta>
   </front>
   <body>
+    <sec id="abstract">
+      <title>Abstract</title>
+      <p>This white paper reports on the OTESSA Santa Fe Colloquium, a
+  two-day scholarly convening held in June 2025 as part of the OTESSA
+  2025 Congress. Designed as a pilot for a collaborative,
+  problem-centered model of inquiry, the colloquium brought together
+  researchers, instructional designers, faculty, and journal editors to
+  shift attention from educational technologies toward significant
+  problems of practice in instructional design and technology (IDT).
+  Through structured activities, including a World Café dialogue model
+  and a Grand Challenges workshop, participants collectively identified,
+  refined, and prioritized pressing challenges facing the field. Three
+  priority grand challenges emerged: considering the whole human in
+  education, supporting learner mental wellness, and redefining the
+  purposes and structures of education. This paper synthesizes key
+  insights from conference activities and post-colloquium reflection
+  papers, highlighting shared themes, areas of alignment, and
+  opportunities for coordination. Rather than presenting empirical
+  findings, the report offers a practice-oriented synthesis intended to
+  inform strategic planning, future convenings, and coordinated research
+  and practice efforts within OTESSA and the broader IDT community.</p>
+    </sec>
     <sec id="introduction">
       <title>
         <bold>Introduction</bold>
@@ -346,9 +324,10 @@ inquiry</kwd>
   focusing on <italic>problems</italic>—rather than technologies or
   solutions—was a necessary shift for the field. While connections to
   frameworks such as the UNESCO Sustainable Development Goals
-  (<xref alt="“UNESCO and Sustainable Development Goals  UNESCO” n.d." rid="ref-UNESCOSustainableDevelopment" ref-type="bibr">“UNESCO
-  and Sustainable Development Goals UNESCO” n.d.</xref>) were left
-  implicit, many of the accepted papers explicitly drew such links.</p>
+  (<xref alt="UNESCO and Sustainable Development Goals  UNESCO, n.d." rid="ref-UNESCOSustainableDevelopment" ref-type="bibr"><italic>UNESCO
+  and Sustainable Development Goals UNESCO</italic>, n.d.</xref>) were
+  left implicit, many of the accepted papers explicitly drew such
+  links.</p>
       <p>The final output of the colloquium was a preliminary list of
   identified grand challenges, with shared notes on potential avenues
   for coordination and collaboration. This list was intended as a

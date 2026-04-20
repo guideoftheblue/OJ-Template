@@ -1,15 +1,21 @@
 project:
   type: manuscript
+  output-dir: docs
 
 manuscript:
   article: index.qmd
 
 format:
   html:
-    embed-resources: true
+    embed-resources: false
+    page-footer: "Copyright 2021, Norah Jones" 
+    navbar:
+      search: true
+      brand-logo: true
   docx:
     reference-doc: reference.docx
   jats: default
+
 
   # (other formats)
   # pdf: default
@@ -32,9 +38,12 @@ format:
       padding-top: 0.25in
     pdf-standard: ua-1
     columns: 1
+    page-footer: "Copyright 2021, Norah Jones" 
 
 execute:
   freeze: true
+
+format-links: false
 
 
 
