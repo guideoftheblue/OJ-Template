@@ -62,9 +62,11 @@ funding: "The author received no specific funding for this work."
 This white paper reports on the OTESSA Santa Fe Colloquium, a two-day scholarly convening held in June 2025 as part of the OTESSA 2025 Congress. Designed as a pilot for a collaborative, problem-centered model of inquiry, the colloquium brought together researchers, instructional designers, faculty, and journal editors to shift attention from educational technologies toward significant problems of practice in instructional design and technology (IDT). Through structured activities, including a World Café dialogue model and a Grand Challenges workshop, participants collectively identified, refined, and prioritized pressing challenges facing the field. Three priority grand challenges emerged: considering the whole human in education, supporting learner mental wellness, and redefining the purposes and structures of education. This paper synthesizes key insights from conference activities and post-colloquium reflection papers, highlighting shared themes, areas of alignment, and opportunities for coordination. Rather than presenting empirical findings, the report offers a practice-oriented synthesis intended to inform strategic planning, future convenings, and coordinated research and practice efforts within OTESSA and the broader IDT community.
 
 
-
+![this is a test](assets/otessa-banner.png){#fig-test}
 
 # **Introduction** 
+
+@fig-test
 
 This special issue is the result of the OTESSA Santa Fe Colloquium that took place June 5–6, 2025, as part of the broader OTESSA 2025 Congress, which included both virtual and in-person gatherings across multiple sites. While the main Congress ran virtually from June 2–6 and included on-site meetings in Toronto and Victoria, the Santa Fe event served as a dedicated, in-person scholarly colloquium hosted at the Museum of Indian Arts & Culture in Santa Fe, New Mexico.
 
@@ -262,4 +264,7 @@ The authors declare no conflicts of interest.
 No datasets were generated or analyzed as part of this practice-oriented work.
 
 # References
+
+
+
 

@@ -7,13 +7,13 @@ manuscript:
 
 format:
   html:
-    embed-resources: false
+    embed-resources: true
     page-footer: "Copyright 2021, Norah Jones" 
     navbar:
       search: true
       brand-logo: true
-  docx:
-    reference-doc: reference.docx
+  # docx:
+  #   reference-doc: reference.docx
   jats: default
 
 
@@ -26,7 +26,7 @@ format:
   #   pdf-standard: [a-4f, ua-2]
   #   documentclass: scrartcl
   #   papersize: letter
-  #   mainfont: Arial
+  #   
 
 
   typst:
@@ -36,9 +36,9 @@ format:
       location: right-top
       padding-right: 0.5in
       padding-top: 0.25in
-    pdf-standard: ua-1
+    # pdf-standard: ua-1
     columns: 1
-    page-footer: "Copyright 2021, Norah Jones" 
+    mainfont: Arial
 
 execute:
   freeze: true

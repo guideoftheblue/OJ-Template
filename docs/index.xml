@@ -136,11 +136,20 @@ work.</funding-statement>
   findings, the report offers a practice-oriented synthesis intended to
   inform strategic planning, future convenings, and coordinated research
   and practice efforts within OTESSA and the broader IDT community.</p>
+      <fig id="fig-test">
+        <caption>
+          <p>Figure 1: this is a test</p>
+        </caption>
+        <graphic mimetype="image" mime-subtype="png" xlink:href="assets/otessa-banner.png"/>
+      </fig>
     </sec>
     <sec id="introduction">
       <title>
         <bold>Introduction</bold>
       </title>
+      <p>
+        <xref alt="Figure 1" rid="fig-test">Figure 1</xref>
+      </p>
       <p>This special issue is the result of the OTESSA Santa Fe Colloquium
   that took place June 5–6, 2025, as part of the broader OTESSA 2025
   Congress, which included both virtual and in-person gatherings across
