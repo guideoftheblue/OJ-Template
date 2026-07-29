@@ -33,6 +33,7 @@ format:
   typst:
     toc: false
     template-partials:
+    - typst-show.typ
     - typst-template.typ
     logo:
       width: 1in

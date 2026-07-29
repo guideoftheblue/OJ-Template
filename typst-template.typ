@@ -104,7 +104,14 @@
 
         #if authors != none and authors != () {
             let author-cells = authors.map(author => (
-                align(right)[#author.name],
+                align(right)[
+                  #author.name
+                  #if "orcid" in author and author.orcid != none [
+                    #link("https://orcid.org/" + str(author.orcid))[
+                      #box(image("assets/media/orcid_logo.png", height: 0.9em), baseline: 0.3em)
+                    ]
+                  ]
+                ],
                 align(left)[#author.affiliation]
             )).flatten()
 
