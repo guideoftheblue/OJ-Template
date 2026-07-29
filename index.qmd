@@ -11,6 +11,7 @@ authors:
     - University of New Mexico
     roles: writing
     corresponding: true
+    email: abcdefg@test.com
   - name: Theresa Huff
     orcid: 0009-0001-5759-5493
     affiliation: 
@@ -35,8 +36,8 @@ authors:
     - Brigham Young University
     roles: writing
     corresponding: false
-# abstract: |
-#   This white paper reports on the OTESSA Santa Fe Colloquium, a two-day scholarly convening held in June 2025 as part of the OTESSA 2025 Congress. Designed as a pilot for a collaborative, problem-centered model of inquiry, the colloquium brought together researchers, instructional designers, faculty, and journal editors to shift attention from educational technologies toward significant problems of practice in instructional design and technology (IDT). Through structured activities, including a World Café dialogue model and a Grand Challenges workshop, participants collectively identified, refined, and prioritized pressing challenges facing the field. Three priority grand challenges emerged: considering the whole human in education, supporting learner mental wellness, and redefining the purposes and structures of education. This paper synthesizes key insights from conference activities and post-colloquium reflection papers, highlighting shared themes, areas of alignment, and opportunities for coordination. Rather than presenting empirical findings, the report offers a practice-oriented synthesis intended to inform strategic planning, future convenings, and coordinated research and practice efforts within OTESSA and the broader IDT community.
+abstract: 
+   "This white paper reports on the OTESSA Santa Fe Colloquium, a two-day scholarly convening held in June 2025 as part of the OTESSA 2025 Congress. Designed as a pilot for a collaborative, problem-centered model of inquiry, the colloquium brought together researchers, instructional designers, faculty, and journal editors to shift attention from educational technologies toward significant problems of practice in instructional design and technology (IDT). Through structured activities, including a World Café dialogue model and a Grand Challenges workshop, participants collectively identified, refined, and prioritized pressing challenges facing the field. Three priority grand challenges emerged: considering the whole human in education, supporting learner mental wellness, and redefining the purposes and structures of education. This paper synthesizes key insights from conference activities and post-colloquium reflection papers, highlighting shared themes, areas of alignment, and opportunities for coordination. Rather than presenting empirical findings, the report offers a practice-oriented synthesis intended to inform strategic planning, future convenings, and coordinated research and practice efforts within OTESSA and the broader IDT community."
 keywords: instructional design and technology, grand challenges, problem-centered research, human-centered education, collaborative inquiry
 bibliography: references.bib
 csl: apa.csl
@@ -58,11 +59,6 @@ funding: "The author received no specific funding for this work."
 
 
 :::
-
-# Abstract
-
-This white paper reports on the OTESSA Santa Fe Colloquium, a two-day scholarly convening held in June 2025 as part of the OTESSA 2025 Congress. Designed as a pilot for a collaborative, problem-centered model of inquiry, the colloquium brought together researchers, instructional designers, faculty, and journal editors to shift attention from educational technologies toward significant problems of practice in instructional design and technology (IDT). Through structured activities, including a World Café dialogue model and a Grand Challenges workshop, participants collectively identified, refined, and prioritized pressing challenges facing the field. Three priority grand challenges emerged: considering the whole human in education, supporting learner mental wellness, and redefining the purposes and structures of education. This paper synthesizes key insights from conference activities and post-colloquium reflection papers, highlighting shared themes, areas of alignment, and opportunities for coordination. Rather than presenting empirical findings, the report offers a practice-oriented synthesis intended to inform strategic planning, future convenings, and coordinated research and practice efforts within OTESSA and the broader IDT community.
-
 
 ![this is a test](assets/otessa-banner.png){#fig-test}
 

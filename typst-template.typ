@@ -77,7 +77,7 @@
       block(below: 1em, width: 100%)[
 
         #if title != none {
-          align(center, block(inset: (top: 1em, bottom: 0.5em))[
+          align(center, block(inset: (top: 1em, bottom: 1em))[
             #set par(leading: heading-line-height) if heading-line-height != none
             #set text(font: heading-family) if heading-family != none
             #set text(weight: heading-weight)
@@ -99,16 +99,17 @@
           ])
         }
 
-        /* Displaying authors in a sequential name | affiliation layout rather than the 
-        default 3 column grid which broke up words */
+        // Displaying authors in a two column sequential name | affiliation layout
 
         #if authors != none and authors != () {
             let author-cells = authors.map(author => (
                 align(right)[
-                  #author.name
-                  #if "orcid" in author and author.orcid != none [
-                    #link("https://orcid.org/" + str(author.orcid))[
-                      #box(image("assets/media/orcid_logo.png", height: 0.9em), baseline: 0.3em)
+                  #box[
+                    #author.name
+                    #if "orcid" in author and author.orcid != "" [
+                      #link("https://orcid.org/" + str(author.orcid))[
+                        #box(image("assets/media/orcid_logo.png", height: 0.9em), baseline: 0.3em)
+                      ]
                     ]
                   ]
                 ],
@@ -133,8 +134,14 @@
         }
 
         #if abstract != none {
-          block(inset: 2em)[
-          #text(weight: "semibold")[#abstract-title] #h(1em) #abstract
+          block(inset: 1em)[
+            #text(weight: "semibold")[#abstract-title]\ #abstract
+          ]
+        }
+
+        #if keywords != none and keywords != (){
+          block(inset: (x: 1em, top: 0em, bottom: 1em))[
+            #text(weight: "semibold")[Keywords:] #keywords.join(", ")
           ]
         }
       ]
