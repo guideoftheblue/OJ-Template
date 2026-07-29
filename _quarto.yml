@@ -5,6 +5,7 @@ project:
 manuscript:
   article: index.qmd
 
+
 format:
   html:
     embed-resources: true
@@ -31,6 +32,8 @@ format:
 
   typst:
     toc: false
+    template-partials:
+    - typst-template.typ
     logo:
       width: 1in
       location: right-top
@@ -38,7 +41,8 @@ format:
       padding-top: 0.25in
     # pdf-standard: ua-1
     columns: 1
-    mainfont: Arial
+    font-paths: ["assets/fonts"]
+    font: "Roboto"
 
 execute:
   freeze: true
