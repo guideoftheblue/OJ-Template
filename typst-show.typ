@@ -2,6 +2,9 @@
 $if(title)$
   title: [$title$],
 $endif$
+$if(short-title)$
+  short-title: [$short-title$],
+$endif$
 $if(subtitle)$
   subtitle: [$subtitle$],
 $endif$
@@ -13,6 +16,7 @@ $if(by-author)$
 $for(by-author)$
 $if(it.name.literal)$
     ( name: [$it.name.literal$],
+      family: [$it.name.family$],
       orcid: "$it.orcid$",
       affiliation: [$for(it.affiliations)$$it.name$$sep$, $endfor$],
       email: [$it.email$],

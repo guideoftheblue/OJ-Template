@@ -1,6 +1,8 @@
-#import "headers.typ": first-page-header
+#import "headers.typ": first-page-header, even-header, odd-header
+
 #let article(
   title: none,
+  short-title: none,
   subtitle: none,
   authors: none,
   doi: none,
@@ -40,10 +42,16 @@
     author: authors.map(author => content-to-string(author.name)).join(", ", last: " & "),
   ) if authors != none and authors != ()
 
+  // Setting headers and footers
   set page(
     header: context [
-      #if counter(page).get().first() == 1 [
+      #let p = counter(page).get().first() 
+      #if p == 1 [
         #first-page-header(doi)
+      ] else if calc.rem(p, 2) == 0 [
+        #even-header(title, short-title)
+      ] else [
+        #odd-header(authors)
       ]
     ]
   )

@@ -37,8 +37,7 @@ format:
     - typst-template.typ
     # pdf-standard: ua-1
     columns: 1
-    font-paths: ["assets/fonts"]
-    font: "Roboto"
+    mainfont: Arial
 
 execute:
   freeze: true

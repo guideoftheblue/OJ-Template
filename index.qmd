@@ -1,11 +1,15 @@
 ---
 title: "Report: Grand Challenges in IDT - Coordinating Research and Development on Significant Problems of Practice"
+short-title: "Report: Grand Challenges in IDT"
+#shortened title for headers, leave as "" to use full title
 title-block-banner: "#273893"
 title-block-banner-color: "white"
 article:
   doi: 10.5555/12345678
 authors:
-  - name: Stephanie Moore
+  - name: 
+        given: Stephanie #first name(s)
+        family: Moore #last name
     orcid: 0000-0001-5545-1894
     affiliation: 
         - University of New Mexico
@@ -14,7 +18,9 @@ authors:
     attributes:
         corresponding: true
 
-  - name: Theresa Huff
+  - name:
+        given: Theresa
+        family: Huff    
     orcid: 0009-0001-5759-5493
     affiliation: 
         - Loyola Marymount University 
@@ -22,7 +28,9 @@ authors:
     attributes:
         corresponding: false
 
-  - name: Natalie Milman
+  - name:
+        given: Natalie 
+        family: Milman 
     orcid: 0000-0002-4085-7725
     affiliation: 
         - George Washington University
@@ -30,7 +38,9 @@ authors:
     attributes:
         corresponding: false
 
-  - name: Matthew Schmidt
+  - name: 
+        given: Matthew
+        family: Schmidt
     orcid: 0000-0002-8110-4367
     affiliation: 
         - University of Georgia
@@ -38,7 +48,9 @@ authors:
     attributes:
         corresponding: false
 
-  - name: Jason McDonald
+  - name: 
+        given: Jason
+        family: McDonald
     orcid: 0000-0002-9324-4738
     affiliation: 
         - Brigham Young University
@@ -70,11 +82,7 @@ funding: "The author received no specific funding for this work."
 
 :::
 
-![this is a test](assets/otessa-banner.png){#fig-test}
-
 # Introduction
-
-@fig-test
 
 This special issue is the result of the OTESSA Santa Fe Colloquium that took place June 5–6, 2025, as part of the broader OTESSA 2025 Congress, which included both virtual and in-person gatherings across multiple sites. While the main Congress ran virtually from June 2–6 and included on-site meetings in Toronto and Victoria, the Santa Fe event served as a dedicated, in-person scholarly colloquium hosted at the Museum of Indian Arts & Culture in Santa Fe, New Mexico.
 
