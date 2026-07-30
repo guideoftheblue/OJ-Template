@@ -1,5 +1,5 @@
 ---
-title: "Report: Grand Challenges in Instructional Design and Technology - Coordinating Research and Development on Significant Problems of Practice"
+title: "Report: Grand Challenges in IDT - Coordinating Research and Development on Significant Problems of Practice"
 title-block-banner: "#273893"
 title-block-banner-color: "white"
 article:
@@ -8,34 +8,44 @@ authors:
   - name: Stephanie Moore
     orcid: 0000-0001-5545-1894
     affiliation: 
-    - University of New Mexico
+        - University of New Mexico
     roles: writing
-    corresponding: true
     email: abcdefg@test.com
+    attributes:
+        corresponding: true
+
   - name: Theresa Huff
     orcid: 0009-0001-5759-5493
     affiliation: 
-    - Loyola Marymount University 
+        - Loyola Marymount University 
     roles: writing
-    corresponding: false
+    attributes:
+        corresponding: false
+
   - name: Natalie Milman
     orcid: 0000-0002-4085-7725
     affiliation: 
-    - George Washington University
+        - George Washington University
     roles: writing
-    corresponding: false
+    attributes:
+        corresponding: false
+
   - name: Matthew Schmidt
     orcid: 0000-0002-8110-4367
     affiliation: 
-    - University of Georgia
+        - University of Georgia
     roles: writing
-    corresponding: false
+    attributes:
+        corresponding: false
+
   - name: Jason McDonald
     orcid: 0000-0002-9324-4738
     affiliation: 
-    - Brigham Young University
+        - Brigham Young University
     roles: writing
-    corresponding: false
+    attributes:
+        corresponding: false
+
 abstract: 
    "This white paper reports on the OTESSA Santa Fe Colloquium, a two-day scholarly convening held in June 2025 as part of the OTESSA 2025 Congress. Designed as a pilot for a collaborative, problem-centered model of inquiry, the colloquium brought together researchers, instructional designers, faculty, and journal editors to shift attention from educational technologies toward significant problems of practice in instructional design and technology (IDT). Through structured activities, including a World Café dialogue model and a Grand Challenges workshop, participants collectively identified, refined, and prioritized pressing challenges facing the field. Three priority grand challenges emerged: considering the whole human in education, supporting learner mental wellness, and redefining the purposes and structures of education. This paper synthesizes key insights from conference activities and post-colloquium reflection papers, highlighting shared themes, areas of alignment, and opportunities for coordination. Rather than presenting empirical findings, the report offers a practice-oriented synthesis intended to inform strategic planning, future convenings, and coordinated research and practice efforts within OTESSA and the broader IDT community."
 keywords: instructional design and technology, grand challenges, problem-centered research, human-centered education, collaborative inquiry

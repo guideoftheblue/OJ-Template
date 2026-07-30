@@ -10,9 +10,13 @@ $if(by-author)$
 $for(by-author)$
 $if(it.name.literal)$
     ( name: [$it.name.literal$],
+      orcid: "$it.orcid$",
       affiliation: [$for(it.affiliations)$$it.name$$sep$, $endfor$],
       email: [$it.email$],
-      orcid: "$it.orcid$"),
+$if(it.attributes.corresponding)$
+      corresponding: true,
+$endif$
+    ),
 $endif$
 $endfor$
     ),

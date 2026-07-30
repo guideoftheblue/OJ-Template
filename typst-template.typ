@@ -108,7 +108,7 @@
                     #author.name
                     #if "orcid" in author and author.orcid != "" [
                       #link("https://orcid.org/" + str(author.orcid))[
-                        #box(image("assets/media/orcid_logo.png", height: 0.9em), baseline: 0.3em)
+                        #box(image("assets/media/orcid_logo.png", height: 1.2em), baseline: 0.3em)
                       ]
                     ]
                   ]
@@ -124,8 +124,28 @@
                     ..author-cells
                 )
             ]
-        }
 
+            //Corresponding author block
+
+            let corresponding-author = authors.find(author =>
+              "corresponding" in author and author.corresponding
+            )
+
+            if corresponding-author != none {
+              align(center)[
+                #block(inset: (x: 1em, top: 0.5em, bottom: 0em))[
+                  #text(weight: "semibold")[Correspondence]\
+                  #corresponding-author.name\
+                  #corresponding-author.affiliation\
+                  #if corresponding-author.email != [] {
+                    [Email: ]
+                    content-to-string(corresponding-author.email).replace("@", " [at] ")
+                  }
+                ]
+              ]
+            }
+
+        }
 
         #if date != none {
           align(center)[#block(inset: 1em)[
