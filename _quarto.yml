@@ -35,11 +35,6 @@ format:
     template-partials:
     - typst-show.typ
     - typst-template.typ
-    logo:
-      width: 1in
-      location: right-top
-      padding-right: 0.5in
-      padding-top: 0.25in
     # pdf-standard: ua-1
     columns: 1
     font-paths: ["assets/fonts"]

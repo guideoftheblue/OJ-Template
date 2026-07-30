@@ -5,6 +5,9 @@ $endif$
 $if(subtitle)$
   subtitle: [$subtitle$],
 $endif$
+$if(article.doi)$
+  doi: "$article.doi$",
+$endif$
 $if(by-author)$
   authors: (
 $for(by-author)$

@@ -1,8 +1,9 @@
-
+#import "headers.typ": first-page-header
 #let article(
   title: none,
   subtitle: none,
   authors: none,
+  doi: none,
   keywords: (),
   date: none,
   abstract-title: none,
@@ -38,6 +39,14 @@
   set document(
     author: authors.map(author => content-to-string(author.name)).join(", ", last: " & "),
   ) if authors != none and authors != ()
+
+  set page(
+    header: context [
+      #if counter(page).get().first() == 1 [
+        #first-page-header(doi)
+      ]
+    ]
+  )
 
   set par(
     justify: true,
@@ -134,7 +143,7 @@
             if corresponding-author != none {
               align(center)[
                 #block(inset: (x: 1em, top: 0.5em, bottom: 0em))[
-                  #text(weight: "semibold")[Correspondence]\
+                  #text(weight: "semibold")[Correspondence:]\
                   #corresponding-author.name\
                   #corresponding-author.affiliation\
                   #if corresponding-author.email != [] {
@@ -182,9 +191,10 @@
     );
     ]
   }
-
   doc
 }
+
+
 
 #set table(
   inset: 6pt,
