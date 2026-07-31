@@ -8,8 +8,11 @@ $endif$
 $if(subtitle)$
   subtitle: [$subtitle$],
 $endif$
-$if(article.doi)$
-  doi: "$article.doi$",
+$if(article)$
+  article: (
+    doi: "$article.doi$",
+    pages: [$article.pages$],
+  ),
 $endif$
 $if(by-author)$
   authors: (
@@ -40,6 +43,19 @@ $endif$
 $if(abstract)$
   abstract: [$abstract$],
   abstract-title: "$labels.abstract$",
+$endif$
+$if(journal)$
+  journal: (
+    title: [$journal.title$],
+    abbrev-title: [$journal.abbrev-title$],
+    year: $journal.year$,
+    volume: $journal.volume$,
+    issue: $journal.issue$,
+    copyright: (
+      text: [$journal.copyright.text$],
+      url: "$journal.copyright.url$",
+    ),
+  ),
 $endif$
 $if(mainfont)$
   font: ("$mainfont$",),

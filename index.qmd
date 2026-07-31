@@ -6,6 +6,7 @@ title-block-banner: "#273893"
 title-block-banner-color: "white"
 article:
   doi: 10.5555/12345678
+  pages: "1-9"
 authors:
   - name: 
         given: Stephanie #first name(s)
@@ -66,8 +67,12 @@ csl: apa.csl
 journal: 
   title: "Open/Technology in Education, Society, and Scholarship Association Proceedings"
   abbrev-title: "OTESSA Proceedings"
-volume: 5
-issue: 2
+  year: 2025
+  volume: 5
+  issue: 2
+  copyright: 
+    text: "Authors retain copyright. Articles published under a Creative Commons Attribution 4.0 (CC-BY) International License. This licence allows this work to be copied, distributed, remixed, transformed, and built upon for any purpose provided that appropriate attribution is given, a link is provided to the license, and changes made were indicated."
+    url: ":https://creativecommons.org/licenses/by/4.0/"
 citation: 
   container-title: OTESSA Proceedings
   volume: 5

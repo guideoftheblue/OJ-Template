@@ -1,15 +1,17 @@
 #import "headers.typ": first-page-header, even-header, odd-header
+#import "footers.typ": first-page-footer, even-footer, odd-footer
 
 #let article(
   title: none,
   short-title: none,
   subtitle: none,
   authors: none,
-  doi: none,
+  article: none,
   keywords: (),
   date: none,
   abstract-title: none,
   abstract: none,
+  journal: none,
   thanks: none,
   cols: 1,
   lang: "en",
@@ -44,16 +46,27 @@
 
   // Setting headers and footers
   set page(
+    margin: 1in,
     header: context [
       #let p = counter(page).get().first() 
       #if p == 1 [
-        #first-page-header(doi)
+        #first-page-header(article.doi)
       ] else if calc.rem(p, 2) == 0 [
         #even-header(title, short-title)
       ] else [
         #odd-header(authors)
       ]
-    ]
+    ],
+    footer: context [
+      #let p = counter(page).get().first() 
+      #if p == 1 [
+        #first-page-footer(journal, article)
+      ] else if calc.rem(p, 2) == 0 [
+        #even-footer(journal, article)
+      ] else [
+        #odd-footer(journal, article)
+      ]
+    ],
   )
 
   set par(
@@ -184,6 +197,8 @@
       ]
     )
   }
+
+  pagebreak()
 
   if toc {
     let title = if toc_title == none {
