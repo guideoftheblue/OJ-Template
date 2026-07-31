@@ -60,7 +60,7 @@ authors:
         corresponding: false
 
 abstract: 
-   "This white paper reports on the OTESSA Santa Fe Colloquium, a two-day scholarly convening held in June 2025 as part of the OTESSA 2025 Congress. Designed as a pilot for a collaborative, problem-centered model of inquiry, the colloquium brought together researchers, instructional designers, faculty, and journal editors to shift attention from educational technologies toward significant problems of practice in instructional design and technology (IDT). Through structured activities, including a World Café dialogue model and a Grand Challenges workshop, participants collectively identified, refined, and prioritized pressing challenges facing the field. Three priority grand challenges emerged: considering the whole human in education, supporting learner mental wellness, and redefining the purposes and structures of education. This paper synthesizes key insights from conference activities and post-colloquium reflection papers, highlighting shared themes, areas of alignment, and opportunities for coordination. Rather than presenting empirical findings, the report offers a practice-oriented synthesis intended to inform strategic planning, future convenings, and coordinated research and practice efforts within OTESSA and the broader IDT community."
+   "This white paper reports on the OTESSA Santa Fe Colloquium, a two-day scholarly convening held in June 2025 as part of the OTESSA 2025 Congress. Designed as a pilot for a collaborative, problem-centered model of inquiry, the colloquium brought together researchers, instructional designers, faculty, and journal editors to shift attention from educational technologies toward significant problems of practice in instructional design and technology (IDT). Through structured activities, including a World Café dialogue model and a Grand Challenges workshop, participants collectively identified, refined, and prioritized pressing challenges facing the field. Three priority grand challenges emerged: considering the whole human in education, supporting learner mental wellness, and redefining the purposes and structures of education. This paper synthesizes key insights from conference activities and post-colloquium reflection papers, highlighting shared themes, areas of alignment, and opportunities for coordination. Rather than presenting empirical findings, the report offers a practice-oriented synthesis intended to inform strategic planning, future convenings, and coordinated research and practice efforts within OTESSA and the broader IDT community. considering the whole human in education, supporting learner mental wellness, and redefining the purposes and structures of education."
 keywords: instructional design and technology, grand challenges, problem-centered research, human-centered education, collaborative inquiry
 bibliography: references.bib
 csl: apa.csl
@@ -72,7 +72,7 @@ journal:
   issue: 2
   copyright: 
     text: "Authors retain copyright. Articles published under a Creative Commons Attribution 4.0 (CC-BY) International License. This licence allows this work to be copied, distributed, remixed, transformed, and built upon for any purpose provided that appropriate attribution is given, a link is provided to the license, and changes made were indicated."
-    url: ":https://creativecommons.org/licenses/by/4.0/"
+    url: "https://creativecommons.org/licenses/by/4.0/"
 citation: 
   container-title: OTESSA Proceedings
   volume: 5

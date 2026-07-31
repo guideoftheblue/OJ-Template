@@ -46,7 +46,7 @@
 
   // Setting headers and footers
   set page(
-    margin: 1in,
+    margin: (top: 1.35in, bottom: 1.35in, x: 1in),
     header: context [
       #let p = counter(page).get().first() 
       #if p == 1 [
@@ -70,7 +70,7 @@
   )
 
   set par(
-    justify: true,
+    justify: false,
     leading: linestretch * 0.65em
   )
 
@@ -131,74 +131,90 @@
 
         // Displaying authors in a two column sequential name | affiliation layout
 
-        #if authors != none and authors != () {
-            let author-cells = authors.map(author => (
-                align(right)[
-                  #box[
-                    #author.name
-                    #if "orcid" in author and author.orcid != "" [
-                      #link("https://orcid.org/" + str(author.orcid))[
-                        #box(image("assets/media/orcid_logo.png", height: 1.2em), baseline: 0.3em)
-                      ]
-                    ]
-                  ]
-                ],
-                align(left)[#author.affiliation]
-            )).flatten()
-
-            align(center)[
-                #grid(
-                    columns: (auto, auto),
-                    row-gutter: 0.75em,
-                    column-gutter: 1.5em,
-                    ..author-cells
-                )
-            ]
-
-            //Corresponding author block
-
-            let corresponding-author = authors.find(author =>
-              "corresponding" in author and author.corresponding
-            )
-
-            if corresponding-author != none {
-              align(center)[
-                #block(inset: (x: 1em, top: 0.5em, bottom: 0em))[
-                  #text(weight: "semibold")[Correspondence:]\
-                  #corresponding-author.name\
-                  #corresponding-author.affiliation\
-                  #if corresponding-author.email != [] {
-                    [Email: ]
-                    content-to-string(corresponding-author.email).replace("@", " [at] ")
-                  }
-                ]
-              ]
-            }
-
-        }
-
-        #if date != none {
+         #if date != none {
           align(center)[#block(inset: 1em)[
             #date
           ]]
         }
 
-        #if abstract != none {
-          block(inset: 1em)[
-            #text(weight: "semibold")[#abstract-title]\ #abstract
-          ]
+        #let corresponding-author = if authors != none and authors !=(){
+          authors.find(author =>
+            "corresponding" in author and author.corresponding
+          )
+        } else {
+          none
         }
 
-        #if keywords != none and keywords != (){
-          block(inset: (x: 1em, top: 0em, bottom: 1em))[
-            #text(weight: "semibold")[Keywords:] #keywords.join(", ")
-          ]
+        #if (
+          (authors != none and authors != ()) 
+          or abstract != none 
+          or (keywords != none and keywords != ())
+        ){
+          grid(
+            columns: (1fr, 1fr),
+            gutter: 0.5em,
+            
+            //Left column for authors, affiliations and correspondent
+            block(inset: 1em)[
+              #if (authors != none and authors != ()) {
+                for author in authors {
+                  block(below: 0.75em)[
+                    #box[
+                      #author.name
+                      #if "orcid" in author and author.orcid != "" [
+                        #link("https://orcid.org/" + str(author.orcid))[
+                          #box(image("assets/media/orcid_logo.png", height: 1.2em))
+                        ]
+                      ]
+                    ]\
+                    #author.affiliation
+                  ]
+                }
+
+                if corresponding-author != none {
+                  block(above: 1.25em)[
+                    #text(weight: "semibold")[Correspondence:]\
+                    #corresponding-author.name\
+                    #corresponding-author.affiliation\
+                    #if corresponding-author.email != [] {
+                      [Email: ]
+                      content-to-string(corresponding-author.email).replace("@", " [at] ")
+                    }
+                  ]
+                }
+              }
+            ],
+
+            //Right Column for abstract, keywords
+            block(
+              inset: 1em,
+              stroke: (left: 0.5pt + black),
+            )[
+              #text(size: 9.5pt)[
+                #if abstract != none {
+                  block(below: 1em)[
+                    #text(weight: "semibold")[#abstract-title]\
+                    #v(0.75em)
+                    #abstract
+                    #v(1em)
+                  ]
+                }
+
+                #if keywords != none and keywords != () {
+                  block[
+                    #text(weight: "semibold")[Keywords:] #keywords.join(", ")
+                  ]
+                }
+              ]          
+            ],
+          )
         }
       ]
     )
   }
 
   pagebreak()
+  set page(margin: 1in)
 
   if toc {
     let title = if toc_title == none {
@@ -216,8 +232,6 @@
   }
   doc
 }
-
-
 
 #set table(
   inset: 6pt,

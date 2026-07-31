@@ -8,8 +8,10 @@
             #image("assets/media/copyright.png", height: 1.75em)
         ],
         [
-            #text(size: 7pt)[
-                #journal.copyright.text
+            #link(journal.copyright.url)[
+                #text(size: 7pt)[
+                    #journal.copyright.text
+                ]
             ]
         ]
     )
