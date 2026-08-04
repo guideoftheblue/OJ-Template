@@ -73,11 +73,12 @@
     ],
   )
 
-  // Configure typography settings for paragraphs
+  // Configure typography settings
   set par(
     justify: false,
     leading: linestretch * 0.65em
   )
+  show heading.where(level:1): set align(center)
 
   // Ensuring bulleted and enumerated lists indent
   set list(indent: 1.5em) 
@@ -180,7 +181,10 @@
                         ]
                       ]
                     ]\
-                    #author.affiliation
+                    #for affiliation in author.affiliation{
+                      affiliation
+                      linebreak()
+                    }
                   ]
                 }
               }

@@ -22,7 +22,10 @@ $if(it.name.literal)$
     ( name: [$it.name.literal$],
       family: [$it.name.family$],
       orcid: "$it.orcid$",
-      affiliation: [$for(it.affiliations)$$it.name$$sep$, $endfor$],
+      affiliation: (
+        $for(it.affiliations)$
+          [$it.name$], 
+        $endfor$),
       email: [$it.email$],
 $if(it.attributes.corresponding)$
       corresponding: true,
