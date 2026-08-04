@@ -143,15 +143,6 @@
           ]]
         }
 
-        // Find the author marked as corresponding in the metadata
-        #let corresponding-author = if authors != none and authors !=(){
-          authors.find(author =>
-            "corresponding" in author and author.corresponding
-          )
-        } else {
-          none
-        }
-
         // Create two-column layout if metadata available
         #if (
           (authors != none and authors != ()) 
@@ -165,34 +156,31 @@
             columns: (1fr, 1fr),
             gutter: 0.5em,
             
-            // Left column: authors, affiliations and corresponding author
+            // Left column: authors and affiliations
             block(inset: 1em)[
               #if (authors != none and authors != ()) {
                 for author in authors {
                   block(below: 0.75em)[
                     #box[
                       #author.name
-                      // If author has orcid, display linked ORCID icon
+                      // If author is corresponding author with email, display email as icon
+                      #if ("corresponding" in author 
+                      and author.corresponding 
+                      and author.email != []) [
+                        #link("mailto:" + content-to-string(author.email))[
+                          #box(image("assets/media/envelope.svg", height: 1em),
+                           baseline: 0.15em,)
+                        ]  
+                      ]
+                      // If author has ORCID, display linked ORCID icon
                       #if "orcid" in author and author.orcid != "" [
                         #link("https://orcid.org/" + str(author.orcid))[
-                          #box(image("assets/media/orcid_logo.png", height: 1.2em))
+                          #box(image("assets/media/orcid_logo.png", height: 1.2em),
+                           baseline: 0.15em,)
                         ]
                       ]
                     ]\
                     #author.affiliation
-                  ]
-                }
-
-                // Display corresponding author's contact information
-                if corresponding-author != none {
-                  block(above: 1.25em)[
-                    #text(weight: "semibold")[Correspondence:]\
-                    #corresponding-author.name\
-                    #corresponding-author.affiliation\
-                    #if corresponding-author.email != [] {
-                      [Email: ]
-                      content-to-string(corresponding-author.email).replace("@", " [at] ")
-                    }
                   ]
                 }
               }
@@ -214,7 +202,7 @@
                   ]
                 }
 
-                #if keywords != none and keywords != () {
+                #if (keywords != none and keywords != ()) {
                   block[
                     #text(weight: "semibold")[Keywords:] #keywords.join(", ")
                   ]

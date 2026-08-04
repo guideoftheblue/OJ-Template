@@ -2,8 +2,8 @@
 title: "Report: Grand Challenges in IDT - Coordinating Research and Development on Significant Problems of Practice"
 short-title: "Report: Grand Challenges in IDT"
 # Shortened title for headers, leave as "" to use full title
-title-block-banner: "#273893"
-title-block-banner-color: "white"
+# title-block-banner: "#273893"
+# title-block-banner-color: "white"
 article:
   doi: 10.5555/12345678
   pages: "1-9"
