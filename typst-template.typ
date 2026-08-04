@@ -18,6 +18,7 @@
   region: "US",
   font: none,
   fontsize: 11pt,
+  abstract-fontsize: 9.5pt, // Smaller to fit first page layout
   title-size: 1.5em,
   subtitle-size: 1.25em,
   heading-family: none,
@@ -44,40 +45,45 @@
     author: authors.map(author => content-to-string(author.name)).join(", ", last: " & "),
   ) if authors != none and authors != ()
 
-  // Setting headers and footers
+  // Configure headers and footers
   set page(
-    margin: (top: 1.35in, bottom: 1.35in, x: 1in),
+    // Extra margin room on first page to allow for headers and footers
+    margin: (top: 1.35in, bottom: 1.35in, x: 1in), 
+
     header: context [
       #let p = counter(page).get().first() 
-      #if p == 1 [
+      #if p == 1 [ // First page
         #first-page-header(article.doi)
-      ] else if calc.rem(p, 2) == 0 [
+      ] else if calc.rem(p, 2) == 0 [ // Even pages
         #even-header(title, short-title)
-      ] else [
+      ] else [ // Odd pages
         #odd-header(authors)
       ]
     ],
+
     footer: context [
       #let p = counter(page).get().first() 
-      #if p == 1 [
+      #if p == 1 [ //First page
         #first-page-footer(journal, article)
-      ] else if calc.rem(p, 2) == 0 [
+      ] else if calc.rem(p, 2) == 0 [ // Even pages
         #even-footer(journal, article)
-      ] else [
+      ] else [ // Odd pages
         #odd-footer(journal, article)
       ]
     ],
   )
 
+  // Configure typography settings for paragraphs
   set par(
     justify: false,
     leading: linestretch * 0.65em
   )
 
-  //Ensuring bulleted and enumerated lists indent
-  set list(indent: 1.5em) //ensuring bulleted and enumerated lists indent
+  // Ensuring bulleted and enumerated lists indent
+  set list(indent: 1.5em) 
   set enum(indent: 1.5em)
 
+  // Configure code, math, and text font and language
   set text(lang: lang,
            region: region,
            size: fontsize)
@@ -87,6 +93,7 @@
 
   set heading(numbering: sectionnumbering)
 
+  //  Configure colours for hyperlinks, citations, and files
   show link: set text(fill: rgb(content-to-string(linkcolor))) if linkcolor != none
   show ref: set text(fill: rgb(content-to-string(citecolor))) if citecolor != none
   show link: this => {
@@ -97,8 +104,10 @@
     }
    }
 
+  // Render title block if metadata is available
   let has-title-block = title != none or (authors != none and authors != ()) or date != none or abstract != none
   if has-title-block {
+    // Position first page metadata at the top of the document
     place(
       top,
       float: true,
@@ -106,6 +115,7 @@
       clearance: 4mm,
       block(below: 1em, width: 100%)[
 
+        // Render article title and subtitle from style settings 
         #if title != none {
           align(center, block(inset: (top: 1em, bottom: 1em))[
             #set par(leading: heading-line-height) if heading-line-height != none
@@ -114,9 +124,7 @@
             #set text(style: heading-style) if heading-style != "normal"
             #set text(fill: heading-color) if heading-color != black
 
-            //Prevents word hyphenation in title while preventing weird spacing from justification
             #text(size: title-size)[
-                #set par(justify: false)
                 #title
                 #if thanks != none {
                     footnote(thanks, numbering: "*")
@@ -129,14 +137,13 @@
           ])
         }
 
-        // Displaying authors in a two column sequential name | affiliation layout
-
          #if date != none {
           align(center)[#block(inset: 1em)[
             #date
           ]]
         }
 
+        // Find the author marked as corresponding in the metadata
         #let corresponding-author = if authors != none and authors !=(){
           authors.find(author =>
             "corresponding" in author and author.corresponding
@@ -145,22 +152,27 @@
           none
         }
 
+        // Create two-column layout if metadata available
         #if (
           (authors != none and authors != ()) 
           or abstract != none 
           or (keywords != none and keywords != ())
         ){
+          // Two column layout for first page
+          // Left: authors and correspondence 
+          // Right: abstract and keywords
           grid(
             columns: (1fr, 1fr),
             gutter: 0.5em,
             
-            //Left column for authors, affiliations and correspondent
+            // Left column: authors, affiliations and corresponding author
             block(inset: 1em)[
               #if (authors != none and authors != ()) {
                 for author in authors {
                   block(below: 0.75em)[
                     #box[
                       #author.name
+                      // If author has orcid, display linked ORCID icon
                       #if "orcid" in author and author.orcid != "" [
                         #link("https://orcid.org/" + str(author.orcid))[
                           #box(image("assets/media/orcid_logo.png", height: 1.2em))
@@ -171,6 +183,7 @@
                   ]
                 }
 
+                // Display corresponding author's contact information
                 if corresponding-author != none {
                   block(above: 1.25em)[
                     #text(weight: "semibold")[Correspondence:]\
@@ -185,12 +198,13 @@
               }
             ],
 
-            //Right Column for abstract, keywords
+            // Right column: abstract and keywords
             block(
               inset: 1em,
+              // Dividing line between columns
               stroke: (left: 0.5pt + black),
             )[
-              #text(size: 9.5pt)[
+              #text(size: abstract-fontsize)[
                 #if abstract != none {
                   block(below: 1em)[
                     #text(weight: "semibold")[#abstract-title]\
@@ -213,9 +227,12 @@
     )
   }
 
+  // End of first page
   pagebreak()
-  set page(margin: 1in)
+  // Reset margins after custom first-page layout
+  set page(margin: 1in) 
 
+  // Render table of contents when enabled
   if toc {
     let title = if toc_title == none {
       auto

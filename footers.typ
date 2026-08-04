@@ -1,6 +1,9 @@
+// Define footer layouts for first, even and odd pages
+
+// First page footer: copyright information, journal details, and page number
 #let first-page-footer(journal, article,) = [
     
-    // Copyright
+    // Copyright logo and linked copyright statement
     #grid(
         columns: (auto, 1fr),
         column-gutter: 0.75em,
@@ -20,18 +23,20 @@
     #line(length: 100%)
     #v(-0.7em)
 
-    //Journal info and page number
+   
     #grid(
+        // Journal info
         columns: (1fr, auto),
         [
-            #text(size: 8pt)[
+            #text(size: 8pt)[ 
                 #journal.title: #journal.year, Vol. #journal.volume#("(")#journal.issue#(")") 
                 #article.pages
             ]
         ],
+        // Page number
         [
-            #box(
-                stroke: (left: 1pt),
+            #box( 
+                stroke: (left: 1pt), // Tiny vertical line
                 inset: (left: 1em, right: 1em),
                 outset: (top: 0.5em),
                 height: 1em,
@@ -44,14 +49,16 @@
     )
 ]
 
+// Even page footer: page number followed by journal details
 #let even-footer(journal, article) = [
     #line(length: 100%)
     #v(-0.7em)
     #grid(
         columns: (auto, 1fr),
+        // Page number
         [
             #box(
-                stroke: (right: 1pt),
+                stroke: (right: 1pt), // Tiny vertical line
                 inset: (left: 1em, right: 1em),
                 outset: (top: 0.55em),
                 height: 1em,
@@ -61,6 +68,7 @@
                 ]
             ]
         ],
+        // Journal details
         [
             #box(
                 inset: (left: 1em),
@@ -74,22 +82,24 @@
     )
 ]
 
+// Odd page footer: journal details followed by page number
 #let odd-footer(journal, article) = [
     #line(length: 100%)
     #v(-0.7em)
 
-    //Journal info and page number
     #grid(
         columns: (1fr, auto),
+        // Journal info
         [
             #text(size: 8pt)[
                 #journal.title: #journal.year, Vol. #journal.volume#("(")#journal.issue#(")") 
                 #article.pages
             ]
         ],
+        // Page number
         [
             #box(
-                stroke: (left: 1pt),
+                stroke: (left: 1pt), // Tiny vertical line
                 inset: (left: 1em, right: 1em),
                 outset: (top: 0.5em),
                 height: 1em,

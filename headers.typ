@@ -1,3 +1,6 @@
+// Define header layouts for first, even, and odd pages
+
+// First page header: article type, DOI, OTESSA website, OTESSA hashtag, and logo
 #let first-page-header(doi) = [
     #text(style: "oblique")[Practice Article]
     #v(-0.8em)
@@ -26,6 +29,7 @@
     ) 
 ]
 
+// Even page header: short title if available, full title otherwise
 #let even-header(title, short-title) = [
   #text(style: "oblique")[
     #if short-title == none or short-title == "" {
@@ -38,9 +42,14 @@
   #line(length: 100%)
 ]
 
+// Odd page header: author last names
 #let odd-header(authors) = [
+
+    // Retrieve author last names
     #let last-names = authors.map(author => author.family)
     
+
+    // Format names based on number of authors
     #let author-string = if last-names.len() == 1 {
         last-names.at(0)
     } else if last-names.len() == 2 {

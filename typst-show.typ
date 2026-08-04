@@ -1,3 +1,4 @@
+// Pass Quarto metadata values into the Typst article template
 #show: doc => article(
 $if(title)$
   title: [$title$],
@@ -44,6 +45,7 @@ $if(abstract)$
   abstract: [$abstract$],
   abstract-title: "$labels.abstract$",
 $endif$
+// Journal data used for headers, footers, and title
 $if(journal)$
   journal: (
     title: [$journal.title$],
