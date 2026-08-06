@@ -76,7 +76,8 @@
   // Configure typography settings
   set par(
     justify: false,
-    leading: linestretch * 0.65em
+    leading: linestretch * 0.65em,
+    spacing: 11pt
   )
   show heading.where(level: 1): it => {
     set align(center)
