@@ -82,6 +82,8 @@ citation:
   issue: 2
   doi: 10.5555/12345678
 funding: "The author received no specific funding for this work."
+filters:
+  - orcid.lua
 ---
 
 ::: {.content-visible when-format="typst"}
@@ -274,6 +276,8 @@ We invite continued dialogue through publications, future convenings, and shared
 S.M., M.S., and J.M. co-conceived and co-designed the OTESSA Santa Fe Colloquium, with S.M. providing overall leadership for the convening. S.M., N.M., and T.H. co-led the Grand Challenges workshop; M.S. led and coordinated the World Café Sessions and coordinated the synthesis of colloquium activities and participant reflections. All authors contributed to facilitation of conference sessions; T.H. analyzed reflections for themes and strategic framing of findings and drafted the manuscript; All authors reviewed, revised, and approved the final version. All authors have read and approved the final manuscript.
 
 # Open Researcher and Contributor Identifier (ORCID)
+::: {#orcid}
+:::
 
 # Ethics Statement
 
