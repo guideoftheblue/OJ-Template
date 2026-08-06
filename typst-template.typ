@@ -81,17 +81,17 @@
   show heading.where(level: 1): it => {
     set align(center)
     set text(size: fontsize)
-    set block(below: 1em)
+    set block(below: 11pt)
     it
   }
   show heading.where(level: 2): it => {
     set text(size: fontsize)
-    set block(below: 1em)
+    set block(below: 11pt)
     it
   }
   show heading.where(level: 3): it => {
     set text(size: fontsize, style: "italic")
-    set block(below: 1em)
+    set block(below: 11pt)
     it
   }
 
@@ -176,30 +176,31 @@
             block(inset: 1em)[
               #if (authors != none and authors != ()) {
                 for author in authors {
-                  block(below: 0.75em)[
-                    #box[
-                      #author.name
-                      // If author is corresponding author with email, display email as icon
-                      #if ("corresponding" in author 
-                      and author.corresponding 
-                      and author.email != []) [
-                        #link("mailto:" + content-to-string(author.email))[
-                          #box(image("assets/media/envelope.svg", height: 1em),
-                           baseline: 0.15em,)
-                        ]  
+                  block(below: 6pt)[
+                    #author.name
+                    // If author is corresponding author with email, display email as icon
+                    #if ("corresponding" in author 
+                    and author.corresponding 
+                    and author.email != []) [
+                      #link("mailto:" + content-to-string(author.email))[
+                        #box(image("assets/media/envelope.svg", height: 1em),
+                        baseline: 0.15em,)
+                      ]  
+                    ]
+                    // If author has ORCID, display linked ORCID icon
+                    #if "orcid" in author and author.orcid != "" [
+                      #link("https://orcid.org/" + str(author.orcid))[
+                        #box(image("assets/media/orcid_logo.png", height: 1.2em),
+                        baseline: 0.15em,)
                       ]
-                      // If author has ORCID, display linked ORCID icon
-                      #if "orcid" in author and author.orcid != "" [
-                        #link("https://orcid.org/" + str(author.orcid))[
-                          #box(image("assets/media/orcid_logo.png", height: 1.2em),
-                           baseline: 0.15em,)
-                        ]
-                      ]
-                    ]\
-                    #for affiliation in author.affiliation{
-                      affiliation
-                      linebreak()
-                    }
+                    ]        
+                  ]
+                  block(below: 12pt)[
+                    #stack(
+                      dir: ttb,
+                      spacing: 6pt,
+                      ..author.affiliation
+                    )
                   ]
                 }
               }
@@ -215,7 +216,7 @@
                 #if abstract != none {
                   block(below: 1em)[
                     #text(weight: "semibold")[#abstract-title]\
-                    #v(0.75em)
+                    #v(0.5em)
                     #abstract
                     #v(1em)
                   ]
