@@ -1,8 +1,8 @@
 // Define header layouts for first, even, and odd pages
 
 // First page header: article type, DOI, OTESSA website, OTESSA hashtag, and logo
-#let first-page-header(doi) = [
-    #text(style: "oblique")[Practice Article]
+#let first-page-header(doi, article-type) = [
+    #text(style: "oblique")[#article-type]
     #v(-0.8em)
     #line(length: 100%)
     #v(-0.8em)

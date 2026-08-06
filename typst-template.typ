@@ -53,7 +53,7 @@
     header: context [
       #let p = counter(page).get().first() 
       #if p == 1 [ // First page
-        #first-page-header(article.doi)
+        #first-page-header(article.doi, article.type)
       ] else if calc.rem(p, 2) == 0 [ // Even pages
         #even-header(title, short-title)
       ] else [ // Odd pages

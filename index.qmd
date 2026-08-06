@@ -5,6 +5,7 @@ short-title: "Report: Grand Challenges in IDT"
 # title-block-banner: "#273893"
 # title-block-banner-color: "white"
 article:
+  type: "Practice Article" # Displayed in first page header
   doi: 10.5555/12345678
   pages: "1-9"
 authors:

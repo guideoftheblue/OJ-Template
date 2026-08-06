@@ -11,6 +11,7 @@ $if(subtitle)$
 $endif$
 $if(article)$
   article: (
+    type: [$article.type$],
     doi: "$article.doi$",
     pages: [$article.pages$],
   ),
