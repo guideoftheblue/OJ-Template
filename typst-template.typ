@@ -79,6 +79,9 @@
     leading: linestretch * 0.65em
   )
   show heading.where(level:1): set align(center)
+  show heading.where(level: 1): set text(size: fontsize)
+  show heading.where(level:2): set text(size: fontsize)
+  show heading.where(level:1): set text(size: fontsize)
 
   // Ensuring bulleted and enumerated lists indent
   set list(indent: 1.5em) 
@@ -105,7 +108,7 @@
     }
    }
 
-  // Render title block if metadata is available
+  // Render first page if metadata is available
   let has-title-block = title != none or (authors != none and authors != ()) or date != none or abstract != none
   if has-title-block {
     // Position first page metadata at the top of the document
