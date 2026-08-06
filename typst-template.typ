@@ -78,10 +78,22 @@
     justify: false,
     leading: linestretch * 0.65em
   )
-  show heading.where(level:1): set align(center)
-  show heading.where(level: 1): set text(size: fontsize)
-  show heading.where(level:2): set text(size: fontsize)
-  show heading.where(level:1): set text(size: fontsize)
+  show heading.where(level: 1): it => {
+    set align(center)
+    set text(size: fontsize)
+    set block(below: 1em)
+    it
+  }
+  show heading.where(level: 2): it => {
+    set text(size: fontsize)
+    set block(below: 1em)
+    it
+  }
+  show heading.where(level: 3): it => {
+    set text(size: fontsize, style: "italic")
+    set block(below: 1em)
+    it
+  }
 
   // Ensuring bulleted and enumerated lists indent
   set list(indent: 1.5em) 
