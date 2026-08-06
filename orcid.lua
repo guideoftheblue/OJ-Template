@@ -10,7 +10,10 @@ function Pandoc(doc)
 
         -- If author has ORCID, add them to the block
         if orcid ~= "" then 
-           markdown = markdown .. name .. " ![ORCID](assets/media/orcid_logo.png){width=11pt height=11pt} [https://orcid.org/" .. orcid .. "](https://orcid.org/" .. orcid .. ")  \n" 
+           markdown = markdown 
+           .. name 
+           .. " [![ORCID](assets/media/orcid_logo.png){width=11pt height=11pt}](https://orcid.org/" .. orcid .. ")"
+           .. " [https://orcid.org/" .. orcid .. "](https://orcid.org/" .. orcid .. ")  \n" 
         end
     end
 
