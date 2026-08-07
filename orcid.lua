@@ -8,7 +8,7 @@ function Pandoc(doc)
             pandoc.utils.stringify(author.name.family)
         local orcid = pandoc.utils.stringify(author.orcid)
 
-        -- If author has ORCID, add them to the block
+        -- If author has ORCID, add them to the block with linked ORCID icon and URL
         if orcid ~= "" then 
            markdown = markdown 
            .. name 
@@ -21,7 +21,7 @@ function Pandoc(doc)
 
     return doc:walk({
         Div = function(el)
-            if el.identifier == "orcid" then -- Finds {#orcid} and fills it with built block
+            if el.identifier == "orcid" then -- Finds {#orcid} in md and fills it with built block
                 return output
             end
         end

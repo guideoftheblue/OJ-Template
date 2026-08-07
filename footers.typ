@@ -25,7 +25,7 @@
 
    
     #grid(
-        // Journal info
+        // Journal details
         columns: (1fr, auto),
         [
             #text(size: 8pt)[ 
@@ -89,7 +89,7 @@
 
     #grid(
         columns: (1fr, auto),
-        // Journal info
+        // Journal details
         [
             #text(size: 8pt)[
                 #journal.title: #journal.year, Vol. #journal.volume#("(")#journal.issue#(")") 

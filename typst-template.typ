@@ -167,8 +167,8 @@
           or (keywords != none and keywords != ())
         ){
           // Two column layout for first page
-          // Left: authors and correspondence 
-          // Right: abstract and keywords
+            // Left: authors and correspondence 
+            // Right: abstract and keywords
           grid(
             columns: (1fr, 1fr),
             gutter: 0.5em,
