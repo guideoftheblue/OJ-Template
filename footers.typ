@@ -38,7 +38,7 @@
             #box( 
                 stroke: (left: 1pt), // Tiny vertical line
                 inset: (left: 1em, right: 1em),
-                outset: (top: 0.5em),
+                outset: (top: 0.35em),
                 height: 1em,
             )[
                 #text(size: 8pt)[
@@ -60,7 +60,7 @@
             #box(
                 stroke: (right: 1pt), // Tiny vertical line
                 inset: (left: 1em, right: 1em),
-                outset: (top: 0.55em),
+                outset: (top: 0.35em),
                 height: 1em,
             )[
                 #text(size: 8pt)[
@@ -101,7 +101,7 @@
             #box(
                 stroke: (left: 1pt), // Tiny vertical line
                 inset: (left: 1em, right: 1em),
-                outset: (top: 0.5em),
+                outset: (top: 0.35em),
                 height: 1em,
             )[
                 #text(size: 8pt)[
