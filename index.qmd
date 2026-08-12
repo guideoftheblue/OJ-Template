@@ -81,6 +81,7 @@ citation:
   container-title: OTESSA Proceedings
   volume: 5
   issue: 2
+  issued: 2025 # Date
   doi: 10.5555/12345678
 funding: "The author received no specific funding for this work."
 filters:
