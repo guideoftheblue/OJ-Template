@@ -1,756 +1,94 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving
 and Interchange DTD v1.2 20190208//EN" "JATS-archivearticle1.dtd">
+
 <article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2" article-type="other">
-  <front>
-    <journal-meta>
-      <journal-id/>
-      <journal-title-group>
-        <journal-title>OTESSA Proceedings</journal-title>
-      </journal-title-group>
-      <issn/>
-      <publisher>
-        <publisher-name/>
-      </publisher>
-    </journal-meta>
-    <article-meta>
-      <article-id pub-id-type="doi">10.5555/12345678</article-id>
-      <title-group>
-        <article-title>Report: Grand Challenges in IDT - Coordinating Research
-and Development on Significant Problems of Practice</article-title>
-      </title-group>
-      <contrib-group>
-        <contrib contrib-type="author" corresp="yes">
-          <contrib-id contrib-id-type="orcid">0000-0001-5545-1894</contrib-id>
-          <name>
-            <surname>Moore</surname>
-            <given-names>Stephanie</given-names>
-          </name>
-          <string-name>Stephanie Moore</string-name>
-          <email>abcdefg@test.com</email>
-          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
-          <xref ref-type="aff" rid="aff-1">a</xref>
-          <xref ref-type="corresp" rid="cor-1">*</xref>
-        </contrib>
-        <contrib contrib-type="author">
-          <contrib-id contrib-id-type="orcid">0009-0001-5759-5493</contrib-id>
-          <name>
-            <surname>Huff</surname>
-            <given-names>Theresa</given-names>
-          </name>
-          <string-name>Theresa Huff</string-name>
-          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
-          <xref ref-type="aff" rid="aff-2">b</xref>
-        </contrib>
-        <contrib contrib-type="author">
-          <contrib-id contrib-id-type="orcid">0000-0002-4085-7725</contrib-id>
-          <name>
-            <surname>Milman</surname>
-            <given-names>Natalie</given-names>
-          </name>
-          <string-name>Natalie Milman</string-name>
-          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
-          <xref ref-type="aff" rid="aff-3">c</xref>
-        </contrib>
-        <contrib contrib-type="author">
-          <contrib-id contrib-id-type="orcid">0000-0002-8110-4367</contrib-id>
-          <name>
-            <surname>Schmidt</surname>
-            <given-names>Matthew</given-names>
-          </name>
-          <string-name>Matthew Schmidt</string-name>
-          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
-          <xref ref-type="aff" rid="aff-4">d</xref>
-        </contrib>
-        <contrib contrib-type="author">
-          <contrib-id contrib-id-type="orcid">0000-0002-9324-4738</contrib-id>
-          <name>
-            <surname>McDonald</surname>
-            <given-names>Jason</given-names>
-          </name>
-          <string-name>Jason McDonald</string-name>
-          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
-          <xref ref-type="aff" rid="aff-5">e</xref>
-        </contrib>
-      </contrib-group>
-      <aff id="aff-1">
-        <institution-wrap>
-          <institution>University of New Mexico</institution>
-        </institution-wrap>
-      </aff>
-      <aff id="aff-2">
-        <institution-wrap>
-          <institution>Loyola Marymount University</institution>
-        </institution-wrap>
-      </aff>
-      <aff id="aff-3">
-        <institution-wrap>
-          <institution>George Washington University</institution>
-        </institution-wrap>
-      </aff>
-      <aff id="aff-4">
-        <institution-wrap>
-          <institution>University of Georgia</institution>
-        </institution-wrap>
-      </aff>
-      <aff id="aff-5">
-        <institution-wrap>
-          <institution>Brigham Young University</institution>
-        </institution-wrap>
-      </aff>
-      <author-notes>
-        <corresp id="cor-1">abcdefg@test.com</corresp>
-      </author-notes>
-      <pub-date date-type="pub" publication-format="electronic" iso-8601-date="2025">
-        <year>2025</year>
-      </pub-date>
-      <volume>5</volume>
-      <issue>2</issue>
-      <history/>
-      <abstract>
-This white paper reports on the OTESSA Santa Fe Colloquium, a two-day
-scholarly convening held in June 2025 as part of the OTESSA 2025
-Congress. Designed as a pilot for a collaborative, problem-centered
-model of inquiry, the colloquium brought together researchers,
-instructional designers, faculty, and journal editors to shift attention
-from educational technologies toward significant problems of practice in
-instructional design and technology (IDT). Through structured
-activities, including a World Café dialogue model and a Grand Challenges
-workshop, participants collectively identified, refined, and prioritized
-pressing challenges facing the field. Three priority grand challenges
-emerged: considering the whole human in education, supporting learner
-mental wellness, and redefining the purposes and structures of
-education. This paper synthesizes key insights from conference
-activities and post-colloquium reflection papers, highlighting shared
-themes, areas of alignment, and opportunities for coordination. Rather
-than presenting empirical findings, the report offers a
-practice-oriented synthesis intended to inform strategic planning,
-future convenings, and coordinated research and practice efforts within
-OTESSA and the broader IDT community.
-</abstract>
-      <kwd-group kwd-group-type="author">
-        <kwd>instructional design and technology, grand challenges,
-problem-centered research, human-centered education, collaborative
-inquiry</kwd>
-      </kwd-group>
-      <funding-group>
-        <funding-statement>The author received no specific funding for this
-work.</funding-statement>
-      </funding-group>
-    </article-meta>
-  </front>
-  <body>
-    <sec id="introduction">
-      <title>Introduction</title>
-      <p>This special issue is the result of the OTESSA Santa Fe Colloquium
-  that took place June 5–6, 2025, as part of the broader OTESSA 2025
-  Congress, which included both virtual and in-person gatherings across
-  multiple sites. While the main Congress ran virtually from June 2–6
-  and included on-site meetings in Toronto and Victoria, the Santa Fe
-  event served as a dedicated, in-person scholarly colloquium hosted at
-  the Museum of Indian Arts &amp; Culture in Santa Fe, New Mexico.</p>
-      <p>The Santa Fe convening was organized by Stephanie Moore (University
-  of New Mexico), Matthew Schmidt (University of Georgia), and Jason
-  McDonald (Brigham Young University). It brought together sixteen
-  invited participants, selected through a competitive call for
-  proposals. Attendees represented a mix of faculty, instructional
-  designers, researchers, and doctoral students from institutions
-  including the University of New Mexico, University of Georgia, Brigham
-  Young University, University of Minnesota, The George Washington
-  University, Loyola Marymount University, University of Idaho, and
-  Texas Tech University. Several journal editors also participated,
-  representing <italic>Contemporary Issues in Technology and Teacher
-  Education</italic>, <italic>OTESSA Journal</italic>, <italic>Journal
-  of Computing in Higher Education</italic>, and <italic>Journal of
-  Applied Instructional Design</italic>.</p>
-      <p>This was the first convening of its kind for OTESSA, designed to
-  pilot a model of scholarly colloquia centered on Grand Challenges in
-  instructional design and technology (IDT). Inspired by similar
-  initiatives in other fields, the colloquium’s purpose was to shift the
-  focus of IDT research and practice away from specific technologies and
-  toward complex, global problems that require coordinated,
-  interdisciplinary approaches.</p>
-    </sec>
-    <sec id="format-and-activities">
-      <title>Format and Activities</title>
-      <p>The two-day program combined plenary sessions, workshops, and
-  collaborative “World Café” discussions. The World Café model is a
-  structured small group dialogue process in which participants rotate
-  among tables for timed rounds of discussion, each centered on a
-  focused question or artifact. In each round, a table host briefly
-  orients new participants, after which the group engages in
-  collaborative meaning making, building on insights accumulated across
-  prior rounds. This approach leverages distributed expertise, promotes
-  cumulative sense making, and creates conditions for generative
-  critique that is both dialogic and action oriented
-  (<xref alt="Hokanson, 2023" rid="ref-hokansonAECTSummerResearch2023" ref-type="bibr">Hokanson,
-  2023</xref>).</p>
-      <p>Participants were expected to arrive well-prepared, having read and
-  reviewed all accepted draft papers in advance. Each participant
-  brought questions, feedback, and ideas for how papers might connect to
-  broader grand challenges in the field.</p>
-      <list list-type="bullet">
-        <list-item>
-          <p>Day One opened with a keynote from Brad Hokanson (University of
-      Minnesota) on the importance of finding and framing problems in
-      design research. The day also featured the first Grand Challenges
-      Hands-on Workshop, led by Drs. Moore, Milman, and Huff, which
-      guided participants through structured brainstorming and
-      prioritization exercises. Using sticky notes, colored stickers,
-      and group huddles, attendees identified and refined possible grand
-      challenges in IDT. In the afternoon, participants engaged in World
-      Café Sessions, small-group roundtables where authors presented
-      their work, received structured peer feedback, and collectively
-      identified themes, which were later synthesized on a shared Miro
-      board.</p>
-        </list-item>
-        <list-item>
-          <p>Day Two began with a live-streamed Presidential Address from
-      OTESSA leaders Valerie Irvine and Stephanie Moore, situating the
-      colloquium’s work within the broader international mission of
-      OTESSA. The day also included a Publication Pathways session with
-      OTESSA Journal editors, additional World Café rounds, and a
-      continuation of the Grand Challenges Workshop, where groups
-      elaborated on top-rated problems by answering guiding questions
-      such as: <italic>What is the problem? Who is affected? What has
-      been tried? What evidence is needed? What networks or policies
-      might help?</italic></p>
-        </list-item>
-      </list>
-      <p>Both days featured catered lunches at the Museum Hill Café, which
-  extended opportunities for informal dialogue and networking. The
-  colloquium concluded with an action-planning roundtable and synthesis
-  session, where participants identified opportunities for collaboration
-  and committed to next steps, including preparing a 500-word reflection
-  paper and, for presenting authors, revising their manuscripts for
-  possible publication in the <italic>OTESSA Journal</italic>.</p>
-    </sec>
-    <sec id="significance-of-the-convening">
-      <title>Significance of the Convening</title>
-      <p>By design, the Santa Fe colloquium moved beyond traditional
-  conference presentations to emphasize small-group, interactive,
-  problem-centered dialogue. The structured World Café and workshop
-  models enabled participants to both critique and contribute to one
-  another’s work while collaboratively framing the grand challenges that
-  will guide future OTESSA initiatives. Participants also provided
-  written reflections and feedback, ensuring that the outcomes of this
-  first colloquium will inform the design of future convenings.</p>
-      <p>The Santa Fe event demonstrated the value of blending rigorous
-  scholarly exchange with collaborative, strategic planning. It set the
-  stage for what OTESSA envisions as an ongoing initiative: building
-  networks of researchers and practitioners who can collectively address
-  the grand challenges facing instructional design and educational
-  technology in the years ahead.</p>
-    </sec>
-    <sec id="identified-grand-challenges">
-      <title>Identified Grand Challenges</title>
-      <p>Through a structured workshop process, participants identified an
-  initial list of 15 potential grand challenges in instructional design
-  and technology. These included: demonstrating education; learning and
-  healthcare; forgiving; human–technology partnerships;
-  anti-technorationalism; human(e) education; inclusive education;
-  redefining education; linguistic justice; mental health; rapidly
-  adaptive technology learning; equal/equitable opportunity and closing
-  the digital divide; quality of instruction in K–12; considering the
-  whole student rather than only aspects that serve institutional
-  agendas; and strategies, guidelines, and pedagogy for the responsible
-  use of AI.</p>
-      <p>Following group review and voting, participants consolidated these
-  into three priority grand challenges for deeper discussion:</p>
-      <list list-type="order">
-        <list-item>
-          <p>
-            <bold>Considering the Whole Human</bold>
-          </p>
-          <list list-type="bullet">
-            <list-item>
-              <p><italic>Problem identified</italic>: “Currently education
-          requires you to fit to education instead of education fitting
-          to you. We need to go beyond intellectual capital and address
-          the whole human.”</p>
-            </list-item>
-            <list-item>
-              <p><italic>Why it matters</italic>: Participants highlighted
-          that learners bring with them mental health needs,
-          disabilities, international status, family responsibilities,
-          cultural and linguistic differences, and other realities often
-          overlooked by institutions. Without addressing these,
-          education risks neglecting students as full humans.</p>
-            </list-item>
-          </list>
-        </list-item>
-        <list-item>
-          <p>
-            <bold>Mental Wellness of Learners</bold>
-          </p>
-          <list list-type="bullet">
-            <list-item>
-              <p><italic>Problem identified</italic>: “The mental health
-          crisis affects everything including learning, perseverance,
-          and suicide prevention. Faculty, staff, and designers are not
-          trained to support this.”</p>
-            </list-item>
-            <list-item>
-              <p><italic>Why it matters</italic>: Thriving learners require
-          environments that attend to wellness as a foundation for
-          learning. Participants noted that without explicit attention
-          to this challenge, both individual learners and the broader
-          educational system will continue to decline.</p>
-            </list-item>
-          </list>
-        </list-item>
-        <list-item>
-          <p>
-            <bold>Redefining Education</bold>
-          </p>
-          <list list-type="bullet">
-            <list-item>
-              <p><italic>Problem identified</italic>: “Education is too
-          focused on solutionism, technology, and production.”</p>
-            </list-item>
-            <list-item>
-              <p><italic>Why it matters</italic>: Current systems emphasize
-          serving the economy rather than helping learners flourish.
-          Addressing this challenge means questioning assumptions about
-          education’s purpose and shifting toward human-centered,
-          flourishing-focused models.</p>
-            </list-item>
-          </list>
-        </list-item>
-      </list>
-      <p>These challenges were captured on large sticky notes during huddle
-  sessions and represent draft phrasing to be refined over time. After
-  the group reconvened, the challenges were reviewed, narrowed, and
-  consolidated through rounds of voting. Participants emphasized that
-  focusing on <italic>problems</italic>—rather than technologies or
-  solutions—was a necessary shift for the field. While connections to
-  frameworks such as the UNESCO Sustainable Development Goals
-  (<xref alt="UNESCO and Sustainable Development Goals  UNESCO, n.d." rid="ref-UNESCOSustainableDevelopment" ref-type="bibr"><italic>UNESCO
-  and Sustainable Development Goals UNESCO</italic>, n.d.</xref>) were
-  left implicit, many of the accepted papers explicitly drew such
-  links.</p>
-      <p>The final output of the colloquium was a preliminary list of
-  identified grand challenges, with shared notes on potential avenues
-  for coordination and collaboration. This list was intended as a
-  starting point. Participants were then tasked with writing a 500-word
-  reflection paper to further clarify and refine these challenges in the
-  weeks following the event.</p>
-    </sec>
-    <sec id="key-findings-from-conference-activities">
-      <title>Key Findings from Conference Activities</title>
-      <p>The Santa Fe colloquium confirmed that format matters: structure
-  and intentional design can transform scholarly exchange into strategic
-  collaboration. The World Café model was repeatedly highlighted as an
-  invaluable experience, creating the conditions for rigorous yet
-  empathetic dialogue that deepened both the critique of individual
-  papers and the collective framing of grand challenges. Participants
-  emphasized that this structure, including its small group and
-  interactive organization, allowed them to move past defensiveness and
-  surface more candid, actionable insights.</p>
-      <sec id="human-centered-engagement">
-        <title>Human-Centered Engagement</title>
-        <p>One of the strongest findings was the power of human-centered
-    design in academic convenings. Participants described the experience
-    as intellectually energizing and emotionally grounding—rare in
-    typical conference environments where it seems the emphasis is on
-    checking the box to add a presentation to one’s cv and not
-    meaningful interactions, collaboration, critique, or deep sharing of
-    scholarship. This reinforced a broader theme of the colloquium: if
-    education must be redefined to consider the whole human, so too must
-    scholarly gatherings.</p>
-      </sec>
-      <sec id="strategic-value-of-grand-challenges-framing">
-        <title>Strategic Value of Grand Challenges Framing</title>
-        <p>The integration of grand challenges elevated discussions from
-    project-specific details to system-level priorities, encouraging
-    participants to think in terms of long-term, cross-contextual
-    impact. While some sought more clarity about what qualifies as a
-    grand challenge, most agreed that the framework was essential for
-    aligning research with pressing global needs and for situating work
-    within international agendas such as the UNESCO Sustainable
-    Development Goals.</p>
-      </sec>
-      <sec id="positive-signals">
-        <title>Positive Signals</title>
-        <p>Participants saw Santa Fe as a model for:</p>
-        <list list-type="bullet">
-          <list-item>
-            <p>Deep over broad: engaging more meaningfully with fewer papers
-        rather than skimming many.</p>
-          </list-item>
-          <list-item>
-            <p>Listening as practice: structuring dialogue so authors first
-        absorb before responding.</p>
-          </list-item>
-          <list-item>
-            <p>Constructive critique: cultivating critique and different
-        perspectives was welcome, including between well-established and
-        new, emerging scholars.</p>
-          </list-item>
-          <list-item>
-            <p>Balancing inclusiveness and care: creating space for
-        welcoming all participants within a collegial environment that
-        was not hierarchical, unlike most other academic meetings.</p>
-          </list-item>
-          <list-item>
-            <p>Network-building: generating momentum for collaborations
-        across institutions, journals, and contexts, including early
-        career scholars to be.</p>
-          </list-item>
-        </list>
-      </sec>
-      <sec id="challenges-to-address">
-        <title>Challenges to Address</title>
-        <p>At the same time, participants identified key barriers to
-    effectiveness that should be strategically addressed in future
-    convenings:</p>
-        <list list-type="bullet">
-          <list-item>
-            <p>Infrastructure: poor audio quality and room layout undermined
-        hybrid participation.</p>
-          </list-item>
-          <list-item>
-            <p>Reach: participants wanted mechanisms to ensure broader
-        exposure to all papers.</p>
-          </list-item>
-          <list-item>
-            <p>Continuity: clearer post-event pathways for collaboration are
-        needed to maintain momentum.</p>
-          </list-item>
-        </list>
-      </sec>
-    </sec>
-    <sec id="implications-for-otessa">
-      <title>Implications for OTESSA</title>
-      <p>These findings suggest that OTESSA can claim a distinctive space by
-  redefining what academic convenings look like. By designing events
-  that are structured, problem-centered, and human-focused, OTESSA not
-  only surfaces research but also builds collective capacity to address
-  grand challenges. At the same time, addressing practical barriers
-  (technical, structural, logistical) will be crucial for scaling this
-  model and ensuring equitable participation across diverse sites and
-  modalities.</p>
-      <sec id="key-findings-from-the-participants-papers">
-        <title>Key Findings from the Participants’ Papers</title>
-        <sec id="importance-of-grand-challenges">
-          <title>Importance of Grand Challenges</title>
-          <p>Across the participants’ 500-word reflection papers, authors
-      endorsed grand challenges as a clarifying way to coordinate
-      efforts on issues that are bigger than any single course or tool.
-      Contributors repeatedly framed the problems as systemic,
-      implicating policy, incentives, and the purposes of education,
-      while also cautioning that challenges must be scoped tightly
-      enough to act on. As one writer put it, they left with “a sense of
-      raised awareness,” alongside an “alarm” that demanded sharper
-      focus; another noted that the frame “raised questions about the
-      very purpose and design of education itself.”</p>
-        </sec>
-        <sec id="specific-challenges-developed">
-          <title>Specific Challenges Developed</title>
-          <p>Across the reflection papers, three grand challenge areas
-      surfaced most often: reimagining education’s aims beyond
-      compliance, considering the whole human in learning design, and
-      supporting mental health and wellbeing, especially in online
-      contexts. Participants often linked these concerns to crisis
-      responsive and systemic design. They described converging threads
-      across groups: “different approaches that nonetheless converged
-      around the need to attend to the whole student (belonging, mental
-      health, anxiety), and systemic or crisis responsive design,” and a
-      shared shortlist emerging in the workshop that included “Wellness
-      of the Online Learner” and “Redefining Education.”</p>
-        </sec>
-        <sec id="connection-to-own-work">
-          <title>Connection to Own Work</title>
-          <p>Moving from priorities to practice, many authors described
-      immediate shifts in how they position their projects, from
-      reframing questions to committing to specific next steps. Several
-      expressed a desire to align ongoing studies with one of the
-      identified grand challenges and to continue reflecting on the
-      implications for method and audience. One participant wrote, “I
-      feel an urge to better situate my work within a grand challenge…
-      not only from a pragmatic perspective but also intellectually
-      honest,” while another reported already moving to application: “At
-      my institution I’ve already begun… to situate everyday decisions
-      within a broader social and educational context.”</p>
-        </sec>
-        <sec id="influence-on-paper-thinking">
-          <title>Influence on Paper Thinking</title>
-          <p>Extending those adjustments into writing, the colloquium
-      clarified how papers connect to grand challenges, generated new
-      ideas, and exposed productive gaps, with several noting helpful,
-      actionable feedback. For some, the effect was confirmatory; for
-      others, it prompted substantive reframing and scope shifts beyond
-      the course level. As one contributor explained, the conversations
-      “pushed me to… revise the paper so that it also considers the
-      whole faculty,” and another noted that their work “recognize[s]
-      learners as whole human beings, not just as people engaging with
-      content or technology.”</p>
-        </sec>
-        <sec id="colloquium-feedback">
-          <title>Colloquium Feedback</title>
-          <p>Finally, participants credited the event’s design with enabling
-      rapid sense making and momentum. The World Café surfaced shared
-      patterns efficiently; plenaries and presentations provided
-      conceptual anchors; preparation helped people arrive ready; and
-      Miro harvesting made collective thinking visible. Setting also
-      mattered, with the Santa Fe setting described as conducive to deep
-      dialogue. One author wrote, “The world café model peer discussion
-      helped surface common themes…,” while another highlighted that
-      there was “something powerful about being able to watch in real
-      time as reflections and thematic patterns emerged visually on the
-      board.” Several offered practical ideas for future colloquia to
-      extend post event continuity and time for deeper dives.</p>
-        </sec>
-      </sec>
-    </sec>
-    <sec id="overlapping-and-reinforced-findings">
-      <title>Overlapping and Reinforced Findings</title>
-      <p>Taken together, the live activities and the written submissions
-  tell a coherent story. What surfaced in the room largely reappears on
-  the page, with participants naming similar priorities, using similar
-  language, and moving from ideas to concrete next steps. Some
-  overlapping findings include:</p>
-      <list list-type="order">
-        <list-item>
-          <p><bold>Systemic lens, shared purpose.</bold>
-      In both settings, people looked beyond individual classes to the
-      larger problems shaping education. They reported “a sense of
-      raised awareness” and “alarm,” and pressed on what education is
-      for and how it is designed. This shared framing points to
-      system-level responses rather than isolated interventions.</p>
-        </list-item>
-        <list-item>
-          <p><bold>Whole human and well-being as a throughline.</bold>
-      Building on that, both in-person conversations and reflection
-      papers centered belonging, anxiety, and care as essential to
-      meaningful learning. As one summary put it, groups “converged
-      around the need to attend to the whole student (belonging, mental
-      health, anxiety), and systemic or crisis responsive design.” The
-      papers then carried this emphasis forward, especially for online
-      learners.</p>
-        </list-item>
-        <list-item>
-          <p><bold>Event structure leading to reframing and
-      application.</bold>
-      The format seemed to do more than collect ideas. It prompted
-      shifts that the writing then documented. Authors reported being
-      internally “pushed… to revise the paper” and expressed “an urge to
-      better situate my work within a grand challenge,” with some
-      already taking steps to “situate everyday decisions within a
-      broader social and educational context.”</p>
-        </list-item>
-        <list-item>
-          <p><bold>Rapid synthesis reinforced by visible harvesting.</bold>
-      Rotating dialogue paired with shared capture tools produced quick
-      pattern recognition that persisted into the manuscripts.
-      Participants noted that “the world café model peer discussion
-      helped surface common themes,” and that it was “powerful” to watch
-      patterns emerge “in real time.” The written submissions reflect
-      those same clusters.</p>
-        </list-item>
-        <list-item>
-          <p><bold>Anchoring concepts enabling depth.</bold>
-      Plenary ideas and presentations provided conceptual scaffolds that
-      showed up in the papers as tools that clarified alignment, new
-      connections, and a widened scope. One participant appreciated a
-      posture of being “curious and open rather than trying to control
-      every outcome,” a stance mirrored in the manuscripts.</p>
-        </list-item>
-        <list-item>
-          <p><bold>Preparation and setting amplifying contributions.</bold>
-      Finally, participants credited pre-colloquium reading work and the
-      Santa Fe setting with enabling focus and candid exchange. That
-      preparation is visible in the manuscripts as clearer alignment
-      statements, more specific problem definitions, and tighter
-      rationales for why a grand-challenge lens fits their work.</p>
-        </list-item>
-      </list>
-      <p>In sum, the live activities catalyzed synthesis and momentum, and
-  the papers captured that momentum as shared language, clarified
-  purpose, and actionable pathways for continued collaboration.</p>
-    </sec>
-    <sec id="strategic-implications-next-steps">
-      <title>Strategic Implications &amp; Next Steps</title>
-      <p>This section turns the shared findings into concrete moves the
-  community can take now.</p>
-      <list list-type="order">
-        <list-item>
-          <p><bold>Publish toward the grand challenges</bold>
-      Journal editors and conference chairs should issue themed calls
-      that require a short alignment statement, so new work advances the
-      selected challenges.</p>
-        </list-item>
-        <list-item>
-          <p><bold>Secure a planning grant</bold>
-      Apply for a small planning grant that funds coordination,
-      cross-site convenings, a shared repository, pilot seeding, and
-      light evaluation.</p>
-        </list-item>
-        <list-item>
-          <p><bold>Build a cross-sector, international community of
-      practice</bold>
-      Create a network that links K–12, community colleges, and
-      universities with adjacent fields to inform instruction, policy,
-      teaching, and infrastructure.</p>
-        </list-item>
-        <list-item>
-          <p><bold>Run small pilots that create usable evidence</bold>
-      Launch short, scoped pilots tied to specific challenges and share
-      brief case write-ups and artifacts others can adopt.</p>
-        </list-item>
-        <list-item>
-          <p><bold>Provide simple tools people can use tomorrow</bold>
-      Release a one-paragraph alignment box for manuscripts and
-      proposals and a short well-being and belonging checklist for
-      courses and programs.</p>
-        </list-item>
-        <list-item>
-          <p><bold>Connect research to leadership decisions</bold>
-      Prepare a two-page brief for deans and program heads that states
-      why the challenges matter now and asks for one concrete support
-      action.</p>
-        </list-item>
-        <list-item>
-          <p><bold>Track a few shared indicators</bold>
-      Agree on three easy measures such as pilots launched and
-      completed, courses using the checklist, and a short belonging or
-      anxiety item.</p>
-        </list-item>
-        <list-item>
-          <p><bold>Keep an open channel for critique</bold>
-      Invite counterpoints and refinements through a simple form and
-      publish responses so the challenge set remains focused and
-      useful.</p>
-        </list-item>
-        <list-item>
-          <p><bold>Map scholarship to international frameworks</bold>
-      Conduct a systematic literature review that maps existing working
-      to international frameworks such as UNESCO’s SDGs. Encourage
-      authors and journals to “tag” an SDG by incorporating relevant
-      SDGs into the article’s keywords list.</p>
-        </list-item>
-      </list>
-    </sec>
-    <sec id="conclusion">
-      <title>Conclusion</title>
-      <p>This first OTESSA colloquium accomplished what was hoped. It
-  brought people together to name a focused set of grand challenges,
-  link those challenges to ongoing research and work, and use thoughtful
-  event structures that can move ideas into action. Across the live
-  sessions and the papers, participants focused on problems rather than
-  solutions, the need to support the whole human, and clear ways to
-  carry the work forward.</p>
-      <p>The path ahead is to keep attention on the challenges, seek
-  planning funds to support coordination where possible, and continue
-  building a cross-sector community that includes K–12, community
-  colleges, universities, and relevant partner fields. Publishing toward
-  the challenges and aligning future convenings will help sustain
-  momentum.</p>
-      <p>We invite continued dialogue through publications, future
-  convenings, and shared resources that speak directly to these
-  challenges. This white paper is a reference point for that ongoing
-  conversation and a guide for practical next steps.</p>
-    </sec>
-    <sec id="authors-contributions">
-      <title>Author’s Contributions</title>
-      <p>S.M., M.S., and J.M. co-conceived and co-designed the OTESSA Santa
-  Fe Colloquium, with S.M. providing overall leadership for the
-  convening. S.M., N.M., and T.H. co-led the Grand Challenges workshop;
-  M.S. led and coordinated the World Café Sessions and coordinated the
-  synthesis of colloquium activities and participant reflections. All
-  authors contributed to facilitation of conference sessions; T.H.
-  analyzed reflections for themes and strategic framing of findings and
-  drafted the manuscript; All authors reviewed, revised, and approved
-  the final version. All authors have read and approved the final
-  manuscript.</p>
-    </sec>
-    <sec id="open-researcher-and-contributor-identifier-orcid">
-      <title>Open Researcher and Contributor Identifier (ORCID)</title>
-      <p>Stephanie Moore
-  <ext-link ext-link-type="uri" xlink:href="https://orcid.org/0000-0001-5545-1894"><inline-graphic mimetype="image" mime-subtype="png" xlink:href="assets/media/orcid_logo.png"><alt-text>ORCID</alt-text></inline-graphic></ext-link>
-  <ext-link ext-link-type="uri" xlink:href="https://orcid.org/0000-0001-5545-1894">https://orcid.org/0000-0001-5545-1894</ext-link>
-  Theresa Huff
-  <ext-link ext-link-type="uri" xlink:href="https://orcid.org/0009-0001-5759-5493"><inline-graphic mimetype="image" mime-subtype="png" xlink:href="assets/media/orcid_logo.png"><alt-text>ORCID</alt-text></inline-graphic></ext-link>
-  <ext-link ext-link-type="uri" xlink:href="https://orcid.org/0009-0001-5759-5493">https://orcid.org/0009-0001-5759-5493</ext-link>
-  Natalie Milman
-  <ext-link ext-link-type="uri" xlink:href="https://orcid.org/0000-0002-4085-7725"><inline-graphic mimetype="image" mime-subtype="png" xlink:href="assets/media/orcid_logo.png"><alt-text>ORCID</alt-text></inline-graphic></ext-link>
-  <ext-link ext-link-type="uri" xlink:href="https://orcid.org/0000-0002-4085-7725">https://orcid.org/0000-0002-4085-7725</ext-link>
-  Matthew Schmidt
-  <ext-link ext-link-type="uri" xlink:href="https://orcid.org/0000-0002-8110-4367"><inline-graphic mimetype="image" mime-subtype="png" xlink:href="assets/media/orcid_logo.png"><alt-text>ORCID</alt-text></inline-graphic></ext-link>
-  <ext-link ext-link-type="uri" xlink:href="https://orcid.org/0000-0002-8110-4367">https://orcid.org/0000-0002-8110-4367</ext-link>
-  Jason McDonald
-  <ext-link ext-link-type="uri" xlink:href="https://orcid.org/0000-0002-9324-4738"><inline-graphic mimetype="image" mime-subtype="png" xlink:href="assets/media/orcid_logo.png"><alt-text>ORCID</alt-text></inline-graphic></ext-link>
-  <ext-link ext-link-type="uri" xlink:href="https://orcid.org/0000-0002-9324-4738">https://orcid.org/0000-0002-9324-4738</ext-link></p>
-    </sec>
-    <sec id="ethics-statement">
-      <title>Ethics Statement</title>
-      <p>This paper reports on a scholarly convening and synthesizes themes
-  from collaborative discussions and voluntary post-conference
-  reflections. No human subjects research was conducted, and no
-  institutional ethics approval was required.</p>
-    </sec>
-    <sec id="conflict-of-interest">
-      <title>Conflict of Interest</title>
-      <p>The authors declare no conflicts of interest.</p>
-    </sec>
-    <sec id="data-availability-statement">
-      <title>Data Availability Statement</title>
-      <p>No datasets were generated or analyzed as part of this
-  practice-oriented work.</p>
-    </sec>
-  </body>
-  <back>
-    <ref-list>
-      <title>References</title>
-      <ref id="ref-hokansonAECTSummerResearch2023">
-        <element-citation publication-type="chapter">
-          <person-group person-group-type="author">
-            <name>
-              <surname>Hokanson</surname>
-              <given-names>Brad</given-names>
-            </name>
-          </person-group>
-          <article-title>The AECT summer research symposium</article-title>
-          <source>AECT at 100: A legacy of leadership</source>
-          <person-group person-group-type="editor">
-            <name>
-              <surname>Miller</surname>
-              <given-names>C. T.</given-names>
-            </name>
-            <name>
-              <surname>Piña</surname>
-              <given-names>A. A.</given-names>
-            </name>
-            <name>
-              <surname>Molenda</surname>
-              <given-names>M. H.</given-names>
-            </name>
-            <name>
-              <surname>Harris</surname>
-              <given-names>P. L.</given-names>
-            </name>
-            <name>
-              <surname>Lockee</surname>
-              <given-names>B. B.</given-names>
-            </name>
-          </person-group>
-          <publisher-name>Brill</publisher-name>
-          <year iso-8601-date="2023">2023</year>
-          <fpage>589</fpage>
-          <lpage>598</lpage>
-        </element-citation>
-      </ref>
-      <ref id="ref-UNESCOSustainableDevelopment">
-        <element-citation>
-          <article-title>UNESCO and Sustainable Development Goals  UNESCO</article-title>
-          <date-in-citation content-type="access-date">
-            <year iso-8601-date="2025-12-17">2025</year>
-            <month>12</month>
-            <day>17</day>
-          </date-in-citation>
-          <uri>https://www.unesco.org/en/sdgs</uri>
-        </element-citation>
-      </ref>
-    </ref-list>
-  </back>
+
+<front>
+<journal-meta>
+<journal-id></journal-id>
+
+<journal-title-group>
+</journal-title-group>
+<issn></issn>
+
+<publisher>
+<publisher-name></publisher-name>
+</publisher>
+</journal-meta>
+
+
+<article-meta>
+<article-id pub-id-type="doi">0/0</article-id>
+
+
+
+<contrib-group>
+<contrib contrib-type="author" corresp="yes">
+<name>
+<surname>Last</surname>
+<given-names>First</given-names>
+</name>
+<string-name>First Last</string-name>
+
+<role vocab="https://credit.niso.org" vocab-term="writing – original
+draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
+<xref ref-type="aff" rid="aff-1">a</xref>
+<xref ref-type="corresp" rid="cor-1">&#x002A;</xref>
+</contrib>
+</contrib-group>
+<aff id="aff-1">
+<institution-wrap>
+<institution>Institution name</institution>
+</institution-wrap>
+
+
+
+
+
+
+
+</aff>
+<author-notes>
+<corresp id="cor-1"></corresp>
+</author-notes>
+
+<pub-date date-type="pub" publication-format="electronic" iso-8601-date="Invalid
+Date">
+<year>.nan</year>
+<month>.nan</month>
+<day>.nan</day>
+</pub-date>
+
+<volume>0</volume>
+<issue>0</issue>
+
+
+
+
+<history></history>
+
+
+<kwd-group kwd-group-type="author">
+<kwd>keyword 1, 2, 3</kwd>
+</kwd-group>
+
+
+<funding-group>
+</funding-group>
+
+
+</article-meta>
+
+</front>
+
+<body>
+
+</body>
+
+<back>
+</back>
+
+
+
 </article>
